@@ -1,0 +1,45 @@
+.type_orange {
+  background-image: url("./images/orange-bg.png");
+}
+.type_kiwi {
+  background-image: url("./images/kiwi-bg.png");
+}
+.type_strawberry {
+  background-image: url("./images/straw-bg.png");
+}
+
+.wrapper {
+  background-color: white;
+  width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 50px 0 50px 0;
+}
+
+.type_orange .wrapper {
+  border: 5px solid orange;
+  color: orange;
+}
+
+.type_kiwi .wrapper {
+  border: 5px solid green;
+  color: green;
+}
+
+.type_strawberry .wrapper {
+  border: 5px solid red;
+  color: red;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+ul {
+  color: black;
+}

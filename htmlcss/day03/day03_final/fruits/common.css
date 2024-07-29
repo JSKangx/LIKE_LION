@@ -1,0 +1,72 @@
+body.type_orange {
+    background-image: url(./images/orange-bg.png);
+}
+
+body.type_kiwi {
+    background-image: url(images/kiwi-bg.png);
+}
+
+body.type_strawberry {
+    background-image: url(images/straw-bg.png);
+}
+
+
+.wrapper {
+    background-color: white;
+    width: auto;  /* 부모 너비 기준 꽉참 */
+    height: auto; /* 자식 높이 기준 자동 조절 */
+
+    width: 400px;
+
+    margin: 100px auto;
+    padding: 40px;
+
+    border-radius: 60px 10px 30px 50px;
+    border-top-left-radius: 20px;
+}   
+
+/*
+wrapper에 다중 클래스로서, 두번째 이름을 작명 
+.wrapper.orange {
+    border: 10px solid orange;
+    color: orange;
+}
+
+.wrapper.kiwi {
+    border: 10px solid green;
+    color: green;
+}
+
+.wrapper.strawberry {
+    border: 10px solid red;
+    color: red;
+}
+*/
+
+/* 상위 요소의 클래스명에 영향 받는 wrapper들 */
+body.type_orange .wrapper {
+    border: 10px solid orange;
+    color: orange;
+}
+
+body.type_kiwi .wrapper {
+    border: 10px solid green;
+    color: green;
+}
+
+body.type_strawberry .wrapper {
+    border: 10px solid red;
+    color: red;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    color: black;
+}

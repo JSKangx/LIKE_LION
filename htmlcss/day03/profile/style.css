@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poor+Story&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* CSS Resets */
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+body,
+p {
+  margin: initial;
+}
+
+h1,
+h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: initial;
+}
+
+ul {
+  margin: initial;
+  list-style-type: none;
+  padding-inline-start: initial;
+}
+
+/* Design */
+body {
+  background-image: url("./images/background.png");
+  background-size: cover;
+}
+
+.profile {
+  width: 650px;
+  margin: 70px auto;
+  background-color: #eae7e7;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  padding: 50px;
+  min-height: 380px;
+  box-sizing: border-box;
+  background-image: url("./images/cover04.png");
+  color: white;
+  letter-spacing: 5px;
+  background-size: cover;
+}
+
+.header-wrapper {
+  margin-top: 15px;
+}
+
+.header img {
+  width: 130px;
+  height: 130px;
+  border: 5px solid white;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.header p {
+  font-size: 13px;
+  border-top: 3px solid;
+  padding: 5px 5px 0;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.spec {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  background-size: 85px;
+}
+
+.spec.information {
+  background-image: url("./images/icon-information.png");
+}
+
+.spec.skills {
+  background-image: url("./images/icon-skills.png");
+}
+
+.spec h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ff1393;
+  font-weight: 600;
+}
+
+.list li {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding-left: 12px;
+  font-weight: 300;
+  color: #7b7a7a;
+  border-left: 3px solid #e9e5e5;
+}
+
+.list li:hover {
+  color: #f0b5d3;
+  border-color: #f0b5d3;
+}
+
+.footer {
+  background-color: white;
+  letter-spacing: 6px;
+  color: #999;
+  font-size: 10px;
+  text-align: center;
+  padding: 8px;
+}
+
+.footer a {
+  color: initial;
+  text-decoration: none;
+}

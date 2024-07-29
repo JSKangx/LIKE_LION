@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-card {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 700px;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px 40px;
+}
+
+.title-wrap {
+  text-align: right;
+  padding: 0 25px;
+}
+
+.title-wrap p {
+  font-weight: bold;
+  color: #7c7c7c;
+  line-height: 16px;
+}
+
+.section-title {
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.desc-text {
+  font-size: 13px;
+}
+
+.desc-text-2 {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.subtitle-text {
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.year-text {
+  float: right;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.float-wrap {
+  overflow: hidden;
+}
+
+.img-wrap {
+  text-align: right;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 35px;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: #999898;
+  color: rgb(238, 238, 238);
+  text-align: center;
+  font-size: 13px;
+}
