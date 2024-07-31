@@ -26,12 +26,12 @@ body {
   margin: 60px auto;
 }
 
-.img_fox {
+.animal-cover {
   margin: 0;
   vertical-align: bottom;
 }
 
-.information {
+.animal-contents {
   background-color: #9c6035;
   padding: 0 0 48px 0;
   border-radius: 0 0 30px 30px;
@@ -44,7 +44,7 @@ body {
   margin-bottom: 10px;
 }
 
-.information h1 {
+.animal-contents h1 {
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
@@ -52,7 +52,7 @@ body {
   margin-bottom: 10px;
 }
 
-.information p {
+.animal-contents p {
   padding: 0 20px;
   color: #e8bc9c;
   height: 144px;
