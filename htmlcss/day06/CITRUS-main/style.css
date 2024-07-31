@@ -39,13 +39,25 @@ img {
 .header .lemon {
   color: yellow;
 }
+.header .lemon:hover {
+  background-image: url("./images/lemon.png");
+  text-indent: -9999px;
+}
 
 .header .orange {
   color: orange;
 }
+.header .orange:hover {
+  background-image: url("./images/orange.png");
+  text-indent: -9999px;
+}
 
 .header .jamong {
   color: orangered;
+}
+.header .jamong:hover {
+  background-image: url("./images/jamong.png");
+  text-indent: -9999px;
 }
 
 .main {
