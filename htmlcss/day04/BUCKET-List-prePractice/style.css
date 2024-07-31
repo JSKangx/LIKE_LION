@@ -1,6 +1,8 @@
 /* CSS Resets */
-body {
+body,
+ul {
   margin: unset;
+  padding: unset;
 }
 
 h1 {
@@ -9,6 +11,9 @@ h1 {
   margin: unset;
 }
 
+ul {
+  list-style-type: none;
+}
 /* Design */
 :root {
   font-family: Arial;
@@ -45,5 +50,6 @@ body {
 }
 
 .contents {
-  box-shadow: inset 0 0 20px yellow;
+  box-shadow: inset 0 0 10px blue;
+  padding: 36px 38px;
 }
