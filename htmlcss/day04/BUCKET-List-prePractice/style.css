@@ -24,7 +24,6 @@ body {
 }
 
 .wrapper {
-  box-shadow: inset 0 0 20px red;
   width: 448px;
   margin: 110px auto;
 }
@@ -32,6 +31,7 @@ body {
 .bucket-list {
   background-color: #eeeeee;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 .header {
@@ -62,4 +62,12 @@ body {
   border: 4px solid #d9d9d9;
   border-radius: 10px;
   color: #888888;
+}
+
+.contents-list .list-selected {
+  border: 4px solid #759cff;
+  color: #759cff;
+  background-image: url("./images/check.png");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
 }
