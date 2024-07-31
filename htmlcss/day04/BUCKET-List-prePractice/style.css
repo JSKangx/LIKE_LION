@@ -24,6 +24,9 @@ body {
   margin: 110px auto;
 }
 
+.bucket-list {
+  background-color: #eeeeee;
+}
 .header {
   padding: 46px 0;
   background-color: #ffffff;
