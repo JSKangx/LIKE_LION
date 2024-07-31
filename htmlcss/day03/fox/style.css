@@ -1,15 +1,15 @@
 /* CSS Resets */
 body,
 p {
-  margin: initial;
-  padding: initial;
+  margin: unset;
+  padding: unset;
 }
 
 h1 {
-  font-size: inherit;
-  font-weight: inherit;
-  margin: initial;
-  padding: initial;
+  font-size: unset;
+  font-weight: unset;
+  margin: unset;
+  padding: unset;
 }
 
 :root {
