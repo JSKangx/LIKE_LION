@@ -3,6 +3,10 @@ body {
   margin: unset;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /* Design */
 .wrapper {
   box-shadow: inset 0 0 20px red;
@@ -50,4 +54,10 @@ body {
 
 .footer {
   box-shadow: inset 0 0 20px yellow;
+  height: 60px;
+  text-align: right;
+  line-height: 60px;
+  padding-right: 30px;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 4px;
 }
