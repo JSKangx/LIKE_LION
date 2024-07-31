@@ -12,11 +12,11 @@ h1 {
   padding: unset;
 }
 
+/* Design */
+
 :root {
   font-family: arial;
 }
-
-/* Design */
 
 body {
   background-image: url("./images/bg.png");
