@@ -28,6 +28,7 @@ body {
 
 .img_fox {
   margin: 0;
+  vertical-align: bottom;
 }
 
 .information {
