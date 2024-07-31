@@ -33,7 +33,9 @@ body {
 
 .animal-contents {
   background-color: #9c6035;
-  padding: 0 0 48px 0;
+  background-image: url("./images/green.png");
+  background-repeat: no-repeat;
+  padding: 60px 20px 48px;
   border-radius: 0 0 30px 30px;
   border-bottom: 10px solid #46260e;
   height: 303px;
@@ -48,12 +50,10 @@ body {
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
-  padding: 0 20px;
   margin-bottom: 10px;
 }
 
 .animal-contents p {
-  padding: 0 20px;
   color: #e8bc9c;
   height: 144px;
   line-height: 1.28;
