@@ -12,10 +12,11 @@ h1 {
   padding: initial;
 }
 
-/* Design */
-* {
+:root {
   font-family: arial;
 }
+
+/* Design */
 
 body {
   background-image: url("./images/bg.png");
@@ -55,6 +56,5 @@ body {
 
 .animal-contents p {
   color: #e8bc9c;
-  height: 144px;
   line-height: 1.28;
 }
