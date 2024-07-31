@@ -1,0 +1,24 @@
+/* CSS Resets */
+body {
+  margin: unset;
+}
+
+h1 {
+  font-size: unset;
+  font-weight: unset;
+  margin: unset;
+}
+/* Design */
+.wrapper {
+  box-shadow: inset 0 0 20px red;
+  width: 448px;
+  margin: 110px auto;
+}
+
+.header {
+  box-shadow: inset 0 0 20px blue;
+}
+
+.contents {
+  box-shadow: inset 0 0 20px yellow;
+}
