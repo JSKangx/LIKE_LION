@@ -31,33 +31,34 @@ img {
   letter-spacing: 2.5px;
 }
 
-.header .logo {
+.header .icon:hover {
+  text-indent: -9999px;
+}
+
+.header .icon.logo {
   background-image: url("./images/logo.png");
   text-indent: -9999px;
 }
 
-.header .lemon {
+.header .icon.lemon {
   color: yellow;
 }
-.header .lemon:hover {
+.header .icon.lemon:hover {
   background-image: url("./images/lemon.png");
-  text-indent: -9999px;
 }
 
-.header .orange {
+.header .icon.orange {
   color: orange;
 }
-.header .orange:hover {
+.header .icon.orange:hover {
   background-image: url("./images/orange.png");
-  text-indent: -9999px;
 }
 
-.header .jamong {
+.header .icon.jamong {
   color: orangered;
 }
-.header .jamong:hover {
+.header .icon.jamong:hover {
   background-image: url("./images/jamong.png");
-  text-indent: -9999px;
 }
 
 .main {
