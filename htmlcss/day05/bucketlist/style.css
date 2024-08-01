@@ -45,11 +45,20 @@ body {
   border-bottom: 4px solid #dddddd;
 }
 
+.bucketlist-header .bucketlist-header-squre {
+  background-color: #ff007a;
+  width: 8px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 0 10px 10px 0;
+}
+
 .bucketlist-header h1 {
+  display: inline-block;
   font-size: 24px;
   color: #ff007a;
-  padding-left: 31px;
-  border-left: 8px solid #ff007a;
+  margin-left: 31px;
   line-height: 32px;
 }
 
@@ -58,22 +67,29 @@ body {
 }
 
 .lists li {
-  padding: 10px 34px 10px 10px;
+  padding: 15px 34px 15px 14px;
   box-sizing: border-box;
   margin-bottom: 14px;
   background-color: #ffffff;
-  border: 4px solid #d9d9d9;
+  /* border: 4px solid #d9d9d9; */
+  box-shadow: inset 0 0 0 4px #d9d9d9;
   border-radius: 10px;
   color: #888888;
+  background-image: url("./images/check.svg");
+  background-repeat: no-repeat;
+  background-position: right -100px center;
+  transition: transform 0.5s ease-in-out;
 }
 
-.lists .list-selected {
+.lists li:hover {
   border-color: currentColor;
-  box-shadow: 0 4px 4px 0 rgb(0 0 0/0.1);
+  box-shadow: inset 0 0 0 2px #759cff, 0 4px 4px 0 rgb(0 0 0/0.1);
   color: #759cff;
   background-image: url("./images/check.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
+  box-shadow: #759cff;
+  transform: scaleX(1.1);
 }
 
 .lists li:last-child {
