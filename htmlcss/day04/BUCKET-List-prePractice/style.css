@@ -67,7 +67,7 @@ body {
 }
 
 .lists .list-selected {
-  border: 4px solid #759cff;
+  border-color: currentColor;
   color: #759cff;
   background-image: url("./images/check.png");
   background-repeat: no-repeat;
