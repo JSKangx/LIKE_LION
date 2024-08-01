@@ -22,7 +22,6 @@ body {
 }
 
 .wrapper {
-  box-shadow: inset 0 0 20px red;
   width: 300px;
   margin: 258px auto;
 }
@@ -30,10 +29,6 @@ body {
 /* Design */
 .pokemoncard {
   text-align: center;
-}
-
-.pokemoncard-img {
-  box-shadow: inset 0 0 20px blue;
 }
 
 .pokemoncard-contents {
@@ -64,4 +59,15 @@ body {
 
 .pokemoncard-contents p:not(.pokemon-name) {
   color: #888888;
+}
+
+.pokemoncard-footer {
+  padding: 15px 0;
+  background-color: #eeeeee;
+}
+.pokemoncard-footer img {
+  margin-right: 4px;
+}
+.pokemoncard-footer img:last-child {
+  margin: 0;
 }
