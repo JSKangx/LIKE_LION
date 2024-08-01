@@ -29,10 +29,11 @@ body {
   margin: 110px auto;
 }
 
-.bucket-list {
+.bucketlist {
   background-color: #eeeeee;
   font-weight: bold;
   border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -42,7 +43,7 @@ body {
   border-bottom: 4px solid #dddddd;
 }
 
-.header h1 {
+.bucketlist-header h1 {
   font-size: 24px;
   color: #ff007a;
   padding-left: 31px;
