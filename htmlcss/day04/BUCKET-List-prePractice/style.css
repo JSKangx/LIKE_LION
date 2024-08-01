@@ -57,7 +57,7 @@ body {
 
 .lists li {
   width: 372px;
-  padding: 10px;
+  padding: 10px 34px 10px 10px;
   box-sizing: border-box;
   margin-bottom: 14px;
   background-color: #ffffff;
@@ -68,8 +68,9 @@ body {
 
 .lists .list-selected {
   border-color: currentColor;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0/0.1);
   color: #759cff;
-  background-image: url("./images/check.png");
+  background-image: url("./images/check.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
