@@ -36,7 +36,7 @@ body {
   overflow: hidden;
 }
 
-.header {
+.bucketlist-header {
   padding: 46px 0;
   background-color: #ffffff;
   border-bottom: 4px solid #dddddd;
@@ -50,7 +50,7 @@ body {
   line-height: 32px;
 }
 
-.contents {
+.bucketlist-contents {
   padding: 36px 38px 24px;
 }
 
