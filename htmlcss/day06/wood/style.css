@@ -1,0 +1,26 @@
+/* CSS Resets */
+body {
+  margin: unset;
+}
+
+body {
+  background-image: url("./images/header-bg.png");
+}
+
+.l_wrapper {
+  width: 960px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.main {
+  box-shadow: inset 0 0 10px red;
+}
+
+.nav {
+  box-shadow: inset 0 0 10px blue;
+}
+
+.footer {
+  box-shadow: inset 0 0 10px peru;
+}
