@@ -45,13 +45,16 @@ body {
   border-bottom: 4px solid #dddddd;
 }
 
-.bucketlist-header .bucketlist-header-squre {
+.bucketlist-header h1::before {
+  content: "";
+  display: inline-block;
   background-color: #ff007a;
   width: 8px;
-  height: 32px;
+  height: 1.3em;
   display: inline-block;
   vertical-align: bottom;
   border-radius: 0 10px 10px 0;
+  margin: 0 31px 0 -31px;
 }
 
 .bucketlist-header h1 {
