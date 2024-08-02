@@ -91,6 +91,7 @@ body {
   padding-left: 10px;
   background-color: white;
   display: flex;
+  border-top: 4px solid #ffa500;
 }
 
 .wood-nav .nav-item span {
@@ -102,5 +103,14 @@ body {
 }
 
 .footer {
-  box-shadow: inset 0 0 10px peru;
+  margin: 0 -255px;
+  background-color: #ffffff;
+  color: #aaaaaa;
+  min-height: 53px;
+  text-align: center;
+  line-height: 53px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.29em;
+  border-top: 2px solid #aaaaaa;
 }
