@@ -24,7 +24,9 @@ body {
 }
 
 .l_wrapper {
-  width: 700px;
+  width: auto;
+  max-width: 1000px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -77,4 +79,17 @@ body {
 }
 .timeline-lists .list-item:last-child div {
   margin-bottom: unset;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+  .timeline-header h1 {
+    font-size: 30px;
+  }
+  .timeline-lists li {
+    width: auto;
+  }
+  .timeline-lists .list-item div {
+    margin-bottom: 30px;
+  }
 }
