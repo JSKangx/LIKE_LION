@@ -1,3 +1,64 @@
+/* CSS Resets */
+body,
+ol {
+  margin: unset;
+  padding: unset;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+/* Layout */
+body {
+  background-color: #006aff;
+}
+
+.l_wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* Typography */
 :root {
   font-family: "Montserrat", sans-serif;
+}
+
+/* Design */
+.timeline {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-header {
+  padding: 50px 0;
+}
+
+.timeline-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.timeline-contents {
+  padding: 30px 0;
+}
+
+.timeline-contents .timeline-lists {
+  box-shadow: inset 0 0 20px red;
+}
+
+.timeline-lists li {
+  width: 50%;
+  background-color: white;
+}
+
+.timeline-lists li:nth-child(even) {
+  margin-left: auto;
 }
