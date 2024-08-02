@@ -32,7 +32,34 @@ body {
   border: 30px solid #ffa500;
   background-image: url("./images/container-bg.png");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 54px top 54px;
+  padding: 60px;
+}
+
+.main .main-title {
+  font-size: 32px;
+  color: #ffa500;
+  letter-spacing: 0.19em;
+  margin-bottom: 26px;
+}
+
+.main .main-title span {
+  font-weight: 600;
+}
+
+.main .main-title::after {
+  display: block;
+  content: "";
+  width: 373px;
+  height: 4px;
+  background-color: #ffa500;
+  border-radius: 12px;
+}
+
+.main-title + p {
+  width: 482px;
+  color: #ffa500;
+  line-height: 1.6em;
 }
 
 .nav {
