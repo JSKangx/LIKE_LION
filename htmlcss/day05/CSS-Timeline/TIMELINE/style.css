@@ -1,7 +1,8 @@
 /* CSS Resets */
 body,
 ol,
-h2 {
+h2,
+button {
   margin: unset;
   padding: unset;
 }
@@ -59,6 +60,13 @@ body {
 
 .timeline-lists li:nth-child(even) {
   margin-left: auto;
+}
+
+.list-item .list-item-year {
+  font-size: 30px;
+  font-weight: 600;
+  color: #368edf;
+  margin-bottom: 15px;
 }
 
 .timeline-lists .list-item div {
