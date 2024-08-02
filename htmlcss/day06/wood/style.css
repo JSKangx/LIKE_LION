@@ -10,6 +10,10 @@ h1 {
   font-weight: unset;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /* Typography */
 :root {
   font-family: "Arial";
@@ -18,7 +22,6 @@ h1 {
 /* Layout */
 .l_wrapper {
   width: 960px;
-  background-color: white;
   margin: 0 auto;
 }
 
@@ -27,7 +30,11 @@ body {
   background-image: url("./images/header-bg.png");
 }
 
-.main {
+.wood {
+  color: #ffa500;
+}
+
+.wood-main {
   margin-top: 100px;
   border: 30px solid #ffa500;
   background-image: url("./images/container-bg.png");
@@ -36,18 +43,18 @@ body {
   padding: 60px;
 }
 
-.main .main-title {
+.wood-main .wood-main-title {
   font-size: 32px;
   color: #ffa500;
   letter-spacing: 0.19em;
   margin-bottom: 26px;
 }
 
-.main .main-title span {
+.wood-main .wood-main-title span {
   font-weight: 600;
 }
 
-.main .main-title::after {
+.wood-main .wood-main-title::after {
   display: block;
   content: "";
   width: 373px;
@@ -57,17 +64,41 @@ body {
   margin-top: 7px;
 }
 
-.main-title + p {
+.wood-main-title + p {
   width: 482px;
-  color: #ffa500;
   line-height: 160%;
 }
 
-.nav {
+.wood-nav {
   background-color: #dddddd;
-  min-height: 344px;
   width: auto;
   margin: -40px -255px 0;
+  padding: 30px 0;
+}
+
+.wood-nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wood-nav .nav-item {
+  display: inline-block;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.nav-item div {
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+}
+
+.wood-nav .nav-item span {
+  line-height: 50px;
+}
+
+.nav-item img {
+  margin-left: auto;
 }
 
 .footer {
