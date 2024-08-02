@@ -32,7 +32,7 @@ body {
   border: 30px solid #ffa500;
   background-image: url("./images/container-bg.png");
   background-repeat: no-repeat;
-  background-position: right 40px top 40px;
+  background-position: right 54px top 54px;
   padding: 60px;
 }
 
@@ -54,6 +54,7 @@ body {
   height: 4px;
   background-color: #ffa500;
   border-radius: 12px;
+  margin-top: 9px;
 }
 
 .main-title + p {
