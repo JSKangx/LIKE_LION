@@ -19,10 +19,6 @@ h2 {
 }
 
 /* Layout */
-body {
-  background-color: #006aff;
-}
-
 .l_wrapper {
   width: auto;
   max-width: 1000px;
@@ -36,6 +32,10 @@ body {
 }
 
 /* Design */
+body {
+  background-color: #006aff;
+}
+
 .timeline {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -53,15 +53,35 @@ body {
 
 .timeline-contents {
   padding-bottom: 30px;
+}
+
+/* 타임라인의 전반적인 레이아웃을 담당 */
+.timeline-lists {
   margin: 0 -20px;
 }
 
-.timeline-lists li {
+.timeline-lists .list-item {
   width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: -100px;
 }
 
 .timeline-lists li:nth-child(even) {
   margin-left: auto;
+}
+
+.timeline-lists .list-item:last-child {
+  margin-bottom: unset;
+}
+
+/* 실제 눈에 보이는 컴포넌트 (독립성) */
+.timeline-lists .list-item div {
+  width: auto;
+  padding: 40px;
+  min-height: 250px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .list-item .list-item-year {
@@ -71,25 +91,14 @@ body {
   margin-bottom: 15px;
 }
 
-.timeline-lists .list-item div {
-  margin: 0px 20px -50px 20px;
-  background-color: white;
-  padding: 30px 25px;
-  border-radius: 10px;
-}
-.timeline-lists .list-item:last-child div {
-  margin-bottom: unset;
-}
-
 /* Media Query */
 @media (max-width: 600px) {
   .timeline-header h1 {
     font-size: 30px;
+    padding: 10px;
   }
-  .timeline-lists li {
-    width: auto;
-  }
-  .timeline-lists .list-item div {
+  .timeline-lists .list-item {
+    width: unset;
     margin-bottom: 30px;
   }
 }
