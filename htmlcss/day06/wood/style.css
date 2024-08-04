@@ -31,8 +31,6 @@ body {
   background-size: 210%;
   background-position: right -500px top;
   background-repeat: no-repeat;
-
-  box-shadow: inset 0 0 20px red;
 }
 
 .wood {
