@@ -1,15 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poor+Story&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Grey+Qo&family=Pacifico&family=Poor+Story&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* CSS Resets */
-body {
+body,
+ul,
+p {
   margin: unset;
+  padding: unset;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-size: unset;
+  font-weight: unset;
+  margin: unset;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* Layouts */
 .l_wrapper {
   box-shadow: inset 0 0 20px red;
-  width: 450px;
+  width: 700px;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.l_row {
+  display: flex;
+}
+
+.l_row_content {
+  width: 50%;
+  padding: 40px 10px 20px 10px;
+  box-sizing: border-box;
 }
 
 /* Design */
@@ -18,11 +49,11 @@ body {
 }
 
 .halloween {
-  /* background-image: url("images/bg.png"); */
+  background-image: url("images/bg.png");
+  padding: 0 100px;
 }
 
 .halloween-header {
-  box-shadow: inset 0 0 20px yellow;
   padding: 10px 0;
   text-align: center;
   font-size: 25px;
@@ -31,10 +62,39 @@ body {
   color: #ff4500;
 }
 
-.halloween-main {
-  box-shadow: inset 0 0 20px blue;
+.halloween-main .card:nth-child(odd) {
+  background-color: #323232;
+}
+
+.halloween-main .card:nth-child(even) {
+  background-color: #232323;
+}
+
+.halloween-main .card {
+  border-top: 2px solid #666666;
+}
+
+.l_row .card-info {
+  text-align: right;
+}
+
+.card-info h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  color: #37f934;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: whitesmoke;
 }
 
 .halloween-footer {
-  box-shadow: inset 0 0 20px purple;
+  background-image: url("images/hand.png");
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 300px;
 }
