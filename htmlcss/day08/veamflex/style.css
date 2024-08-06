@@ -4,6 +4,10 @@ body {
   padding: unset;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /* Layouts */
 .l_wrapper {
   max-width: 1200px;
@@ -26,4 +30,35 @@ body {
 
 .contents {
   background-color: #000;
+}
+
+.header-container {
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.header-container .logo {
+  width: 200px;
+}
+
+.header-container .anger {
+  margin-left: auto;
+  margin-top: auto;
+  width: 140px;
+}
+
+.header-container p {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header-container p::before {
+  content: "";
+  background-color: currentColor;
+  /* display: inline-block; */
+  width: 64px;
+  height: 1px;
+  margin-right: 20px;
 }
