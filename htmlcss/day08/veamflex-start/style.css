@@ -31,7 +31,8 @@ a {
 
 /* Layouts */
 .l_wrapper {
-  width: 1200px;
+  width: auto;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -147,6 +148,11 @@ a {
   background-color: #000000;
 }
 
+.main-sidebar {
+  position: sticky;
+  top: 0;
+}
+
 .main-sidebar .genre {
   display: flex;
   height: 31px;
@@ -193,4 +199,28 @@ a {
   display: flex;
   align-items: center;
   color: #666666;
+}
+
+@media (max-width: 1199px) {
+  .l_wrapper {
+    width: 856px;
+  }
+}
+
+@media (max-width: 859px) {
+  .l_wrapper {
+    width: 500px;
+  }
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-container .header-logo {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  .header-container .header-character,
+  .header-container p::before {
+    display: none;
+  }
 }
