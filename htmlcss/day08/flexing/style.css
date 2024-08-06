@@ -9,7 +9,6 @@ body {
   background-color: skyblue;
   padding: 20px;
   display: flex;
-  height: 500px;
   align-items: center;
 }
 .frog {
@@ -18,24 +17,6 @@ body {
   background-color: mediumseagreen;
   color: lime;
   font-size: 40px;
-}
-
-.frog:nth-child(even) {
-  background-color: greenyellow;
-}
-
-.frog:first-child {
-  margin-bottom: auto;
-}
-
-.frog:nth-child(2) {
-  margin-left: auto;
-}
-
-.frog:nth-child(4) {
-  margin-right: auto;
-}
-
-.frog:last-child {
-  margin-top: auto;
+  flex-grow: 1;
+  flex-basis: 200px;
 }
