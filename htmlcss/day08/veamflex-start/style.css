@@ -21,7 +21,6 @@ img {
 
 /* Components */
 .header {
-  box-shadow: inset 0 0 20px red;
   background-color: #111111;
 }
 
@@ -77,8 +76,15 @@ img {
   flex-basis: 168px;
 }
 
+.main-sidebar .genre {
+  box-shadow: inset 0 0 20px red;
+}
+
+.main-sidebar .genre-selected {
+  box-shadow: inset 0 0 20px gold;
+}
+
 .footer {
-  box-shadow: inset 0 0 20px blue;
   background-color: #111111;
 }
 
