@@ -85,12 +85,21 @@ img {
 
 .main-container .main-contents {
   box-shadow: inset 0 0 20px orange;
+  display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
+  gap: 24px;
+}
+
+.main-contents .movie-item {
+  box-shadow: inset 0 0 20px red;
+  width: 320px;
+  min-height: 412px;
 }
 
 .main-container .main-sidebar {
   /* box-shadow: inset 0 0 20px blue; */
-  flex-basis: 168px;
+  min-width: 168px;
   color: #999999;
   background-color: #000000;
 }
