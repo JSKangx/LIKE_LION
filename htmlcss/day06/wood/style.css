@@ -28,21 +28,19 @@ img {
 
 /* Layouts */
 .l_wrapper {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .l_row {
-  font-size: 0;
-  margin: 0 -15px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
 }
 
 .l_col {
-  display: inline-block;
   font-size: initial;
-  width: 33.3333%;
-  padding: 0 15px;
-  box-sizing: border-box;
+  width: 300px;
 }
 
 /* Design */
