@@ -113,17 +113,20 @@ body {
 }
 
 .contents .item-info {
-  background-image: url("/images/play.png");
-  background-repeat: no-repeat;
-  background-position: right;
   height: 50px;
   border-top: 4px solid;
   padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contents .item-info h2 {
-  line-height: 50px;
   font-weight: bold;
+}
+
+.contents .item-info img {
+  width: 50px;
 }
 
 .footer {
