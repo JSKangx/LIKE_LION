@@ -1,0 +1,23 @@
+/* CSS Resets */
+body {
+  margin: unset;
+}
+
+/* Layouts */
+.l_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: inset 0 0 20px purple;
+}
+
+.header {
+  box-shadow: inset 0 0 20px red;
+}
+
+.main {
+  box-shadow: inset 0 0 20px yellow;
+}
+
+.footer {
+  box-shadow: inset 0 0 20px blue;
+}
