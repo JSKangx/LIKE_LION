@@ -22,7 +22,7 @@ li {
 
 /* Layouts */
 .l_wrapper {
-  max-width: 1100px;
+  max-width: 960px;
   margin: 0 auto;
   box-shadow: inset 0 0 20px purple;
 }
@@ -30,12 +30,14 @@ li {
 .l_row {
   display: flex;
   margin: 0 -15px;
+  flex-wrap: wrap;
 }
 
 .l_col {
   box-shadow: inset 0 0 20px red;
   width: calc(100% / 3);
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 /* 12 Grid System을 위한 클래스 */
@@ -90,17 +92,19 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-container h1 {
   font-size: 24px;
   font-weight: bold;
   color: #ff6600;
+  box-shadow: inset 0 0 20px blue;
 }
 
 .header-container img {
   width: 124px;
-  margin-left: auto;
+  box-shadow: inset 0 0 20px red;
 }
 
 .main {
@@ -118,4 +122,32 @@ body {
   color: #aaaaaa;
   letter-spacing: 0.24em;
   margin: 30px 0 40px 0;
+}
+
+@media (max-width: 800px) {
+  .l_wrapper_tablets {
+    padding: 0 40px;
+  }
+  .l_col_tablets_6_12 {
+    width: 50%;
+    background-color: #ff6600;
+  }
+  .l_col_tablets_12_12 {
+    width: 100%;
+    background-color: #ff6600;
+  }
+}
+
+@media (max-width: 600px) {
+  .l_col_mobile_12_12 {
+    width: 100%;
+    background-color: skyblue;
+  }
+  .header-container {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+  .header-container img {
+    margin-bottom: 16px;
+  }
 }
