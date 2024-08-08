@@ -5,7 +5,8 @@ ul {
   padding: unset;
 }
 
-h1 {
+h1,
+h2 {
   margin: unset;
   font-size: unset;
   font-weight: unset;
@@ -13,6 +14,10 @@ h1 {
 
 li {
   list-style-type: none;
+}
+
+img {
+  vertical-align: bottom;
 }
 
 /* Typography */
@@ -24,7 +29,6 @@ li {
 .l_wrapper {
   max-width: 960px;
   margin: 0 auto;
-  box-shadow: inset 0 0 20px purple;
 }
 
 .l_row {
@@ -38,44 +42,6 @@ li {
   width: calc(100% / 3);
   padding: 0 15px;
   box-sizing: border-box;
-}
-
-/* 12 Grid System을 위한 클래스 */
-.l_col_12_12 {
-  width: 100%;
-}
-.l_col_11_12 {
-  width: 91.66666667%;
-}
-.l_col_10_12 {
-  width: 83.33333333%;
-}
-.l_col_9_12 {
-  width: 75%;
-}
-.l_col_8_12 {
-  width: 66.66666667%;
-}
-.l_col_7_12 {
-  width: 58.33333333%;
-}
-.l_col_6_12 {
-  width: 50%;
-}
-.l_col_5_12 {
-  width: 41.66666667%;
-}
-.l_col_4_12 {
-  width: 33.33333333%;
-}
-.l_col_3_12 {
-  width: 25%;
-}
-.l_col_2_12 {
-  width: 16.66666667%;
-}
-.l_col_1_12 {
-  width: 8.33333333%;
 }
 
 /* Components */
@@ -99,29 +65,61 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #ff6600;
-  box-shadow: inset 0 0 20px blue;
 }
 
 .header-container img {
   width: 124px;
-  box-shadow: inset 0 0 20px red;
 }
 
 .main {
-  box-shadow: inset 0 0 20px blue;
+  /* box-shadow: inset 0 0 20px blue; */
+}
+
+.main-container {
+  padding: 30px 0;
 }
 
 .menucard {
+  background-color: white;
+}
+
+.menucard_cover {
   box-shadow: inset 0 0 20px yellow;
-  /* 레이아웃 확인을 위한 임시 높이 지정 */
-  height: 200px;
+  position: relative;
+}
+
+.menucard_cover img {
+  width: 100%;
+}
+
+.menucard_cover h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 12px;
+  padding: 0 20px;
+  margin-top: -48px;
+  width: fit-content;
+  position: relative;
+}
+
+.menucard_desc {
+  box-shadow: inset 0 0 20px blue;
+}
+
+.menucard_footer {
+  box-shadow: inset 0 0 20px green;
 }
 
 .footer-container {
   font-size: 12px;
   color: #aaaaaa;
   letter-spacing: 0.24em;
-  margin: 30px 0 40px 0;
+  margin: 0 0 40px 0;
 }
 
 @media (max-width: 800px) {
