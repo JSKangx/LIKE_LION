@@ -44,7 +44,6 @@ img {
 }
 
 .l_col {
-  box-shadow: inset 0 0 20px red;
   width: calc(100% / 3);
   padding: 0 15px;
   box-sizing: border-box;
@@ -56,7 +55,6 @@ body {
 }
 
 .header {
-  /* box-shadow: inset 0 0 20px red; */
   padding: 30px 0;
   background-color: white;
 }
@@ -77,10 +75,6 @@ body {
   width: 124px;
 }
 
-.main {
-  /* box-shadow: inset 0 0 20px blue; */
-}
-
 .main-container {
   padding: 30px 0;
 }
@@ -89,14 +83,19 @@ body {
   background-color: white;
   border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .orange_color_menu {
   color: #ff6600;
 }
+.green_color_menu {
+  color: #17a651;
+}
+.blue_color_menu {
+  color: #0075ff;
+}
 
 .menucard_cover {
-  box-shadow: inset 0 0 20px yellow;
   position: relative;
 }
 
@@ -107,7 +106,7 @@ body {
 .menucard_cover h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #ff6600;
+  color: inherit;
   height: 48px;
   display: flex;
   align-items: center;
@@ -127,7 +126,6 @@ body {
 }
 
 .menucard_desc span {
-  color: #ff6600;
   font-weight: bold;
 }
 
@@ -141,12 +139,20 @@ body {
 }
 
 .menucard_footer span {
-  background-color: #ff6600;
   color: white;
   font-size: 12px;
   margin-right: 6px;
   padding: 2px 8px 4px 8px;
   border-radius: 48px;
+}
+.menucard_footer.orange_color_tag span {
+  background-color: #ff6600;
+}
+.menucard_footer.green_color_tag span {
+  background-color: #17a651;
+}
+.menucard_footer.blue_color_tag span {
+  background-color: #0075ff;
 }
 
 .footer-container {
