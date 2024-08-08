@@ -84,6 +84,9 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .orange_color_menu {
   color: #ff6600;
@@ -136,6 +139,7 @@ body {
   flex-wrap: wrap;
   row-gap: 7px;
   background-color: #f4f4f4;
+  margin-top: auto;
 }
 
 .menucard_footer span {
@@ -163,17 +167,19 @@ body {
 }
 
 /* 태블릿 미디어 쿼리 적용 */
-@media (max-width: 800px) {
+@media (max-width: 895px) {
   .l_wrapper_tablets {
     padding: 0 40px;
   }
   .l_col_tablets_6_12 {
     width: 50%;
-    background-color: #ff6600;
+    margin-bottom: 20px;
   }
   .l_col_tablets_12_12 {
     width: 100%;
-    background-color: #ff6600;
+  }
+  .menucard_cover h2 {
+    font-size: 20px;
   }
 }
 
@@ -181,7 +187,7 @@ body {
 @media (max-width: 600px) {
   .l_col_mobile_12_12 {
     width: 100%;
-    background-color: skyblue;
+    margin-bottom: 20px;
   }
   .header-container {
     flex-direction: column-reverse;
