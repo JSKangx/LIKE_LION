@@ -83,6 +83,10 @@ body {
   background-color: white;
 }
 
+.orange_color_menu {
+  color: #ff6600;
+}
+
 .menucard_cover {
   box-shadow: inset 0 0 20px yellow;
   position: relative;
@@ -109,6 +113,15 @@ body {
 
 .menucard_desc {
   box-shadow: inset 0 0 20px blue;
+  padding: 20px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 140%;
+}
+
+.menucard_desc span {
+  color: #ff6600;
+  font-weight: bold;
 }
 
 .menucard_footer {
