@@ -1,6 +1,7 @@
 /* CSS Resets */
 body,
-ul {
+ul,
+p {
   margin: unset;
   padding: unset;
 }
@@ -13,6 +14,7 @@ img {
   vertical-align: bottom;
 }
 
+h1,
 h2,
 h3 {
   margin: unset;
@@ -33,14 +35,24 @@ h3 {
 }
 
 .l_col {
-  background-color: orangered;
   width: calc(100% / 3);
   padding: 0 12px 0 12px;
   box-sizing: border-box;
 }
 
-.card {
-  box-shadow: inset 0 0 20px gold;
+/* Reusable Components */
+.button {
+  margin: 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ff0000;
+  letter-spacing: 0.2em;
+  background-color: #111111;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
 /* Components */
@@ -84,7 +96,6 @@ h3 {
 
 .main_container {
   display: flex;
-  height: 500px;
   gap: 24px;
   padding: 24px 0;
 }
@@ -97,8 +108,36 @@ h3 {
   flex-shrink: 0;
 }
 
+.card {
+  background-color: #222222;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .card-desc {
+  padding: 20px 20px 32px;
+}
+
+.card-desc h1 {
+  font-weight: bold;
+  color: #ebb3bb;
+  margin-bottom: 12px;
+}
+
+.card-desc p {
+  color: #999999;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
 .sidebar {
-  box-shadow: inset 0 0 20px purple;
   width: 168px;
 }
 
