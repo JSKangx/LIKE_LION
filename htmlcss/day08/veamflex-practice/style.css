@@ -200,7 +200,7 @@ h3 {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 680px) {
   .l_col_mobile_12_12 {
     width: calc(100% / 1);
   }
