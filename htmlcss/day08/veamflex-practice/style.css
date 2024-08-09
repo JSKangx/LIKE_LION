@@ -3,6 +3,10 @@ body {
   margin: unset;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /* Layouts */
 .l_wrapper {
   max-width: 1200px;
@@ -13,6 +17,37 @@ body {
 /* Components */
 .header {
   box-shadow: inset 0 0 20px red;
+  background-color: #111111;
+}
+
+.header_container {
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.header_container .img_logo {
+  width: 200px;
+}
+
+.header_container p::before {
+  content: "";
+  background-color: currentColor;
+  width: 64px;
+  height: 1px;
+  margin: 0 20px 0 30px;
+}
+
+.header_container p {
+  color: #999999;
+  display: flex;
+  align-items: center;
+}
+
+.header_container .img_anger {
+  width: 140px;
+  margin-left: auto;
+  margin-top: auto;
 }
 
 .main {
