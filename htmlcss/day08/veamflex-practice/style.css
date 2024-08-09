@@ -65,11 +65,12 @@ img {
   flex-grow: 1;
   flex-basis: 0;
   min-width: 0;
+  flex-shrink: 0;
 }
 
 .sidebar {
   box-shadow: inset 0 0 20px purple;
-  min-width: 168px;
+  width: 168px;
 }
 
 .footer {
