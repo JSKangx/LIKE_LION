@@ -24,12 +24,27 @@ h3 {
 .l_wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: inset 0 0 20px peru;
+}
+
+.l_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px 0 -12px;
+}
+
+.l_col {
+  background-color: orangered;
+  width: calc(100% / 3);
+  padding: 0 12px 0 12px;
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: inset 0 0 20px gold;
 }
 
 /* Components */
 .header {
-  box-shadow: inset 0 0 20px red;
   background-color: #111111;
 }
 
@@ -137,4 +152,17 @@ h3 {
 
 .footer {
   box-shadow: inset 0 0 20px yellow;
+}
+
+/* Media Query */
+@media (max-width: 960px) {
+  .l_col_tablets_6_12 {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 550px) {
+  .l_col_mobile_12_12 {
+    width: calc(100% / 1);
+  }
 }
