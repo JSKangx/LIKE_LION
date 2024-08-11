@@ -83,7 +83,7 @@ body {
   flex-shrink: 0;
   width: 244px;
   min-width: 244px;
-  height: 539px; /* 임시로 고정 높이 부여 */
+  box-sizing: border-box;
   padding: 16px;
   background-image: url("images/sidebar-background.png");
   background-size: cover;
@@ -93,7 +93,6 @@ body {
 .sidebar_logo {
   display: flex;
   align-items: flex-start;
-
   margin-bottom: 7.5px;
 }
 
