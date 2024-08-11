@@ -48,6 +48,12 @@ body {
   padding: 0 8px;
   box-sizing: border-box;
 }
+.l_col_2_12 {
+  width: calc(100% / 6);
+}
+.l_col_4_12 {
+  width: calc(100% / 3);
+}
 
 .l_col img {
   width: 100%;
@@ -101,7 +107,6 @@ body {
 .sidebar_logo img {
   width: 79px;
   margin-left: auto;
-
   margin-top: -26px;
 }
 
@@ -163,4 +168,19 @@ body {
   font-weight: bold;
   background-color: #eeeeee;
   border-radius: 56px;
+}
+
+.reviewCard {
+  background-color: #eeeeee;
+  padding: 16px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.reviewCard span {
+  text-align: right;
 }
