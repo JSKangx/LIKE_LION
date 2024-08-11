@@ -33,8 +33,7 @@ body {
 
 .l_wrapper {
   max-width: 1076px;
-  margin: 100px auto;
-  /* 새로고침 할 때마다 아래로 내리기 싫어서 임시로 100px 만 줬다 */
+  margin: 271px auto;
 }
 
 .l_row {
@@ -132,7 +131,6 @@ body {
 }
 
 .main {
-  box-shadow: inset 0 0 20px blue;
   flex-grow: 1;
   flex-basis: 0;
   min-width: 0;
@@ -141,10 +139,6 @@ body {
   flex-direction: column;
   row-gap: 30px;
   background-color: white;
-}
-
-.list {
-  box-shadow: inset 0 0 20px red;
 }
 
 .list_header {
