@@ -8,6 +8,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Layouts */
+body {
+  background-image: url("images/background.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l_wrapper {
+  width: 1076px;
+  box-shadow: inset 0 0 20px purple;
+}
+
 /* Componenets */
 .mugapp {
   display: flex;
@@ -15,8 +28,14 @@ body {
 
 .header {
   box-shadow: inset 0 0 20px red;
+  flex-shrink: 0;
+  width: 244px;
+  min-width: 244px;
 }
 
 .main {
   box-shadow: inset 0 0 20px blue;
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 0;
 }
