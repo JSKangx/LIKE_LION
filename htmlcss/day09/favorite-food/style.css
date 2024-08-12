@@ -148,13 +148,17 @@ body {
   margin-top: auto;
 }
 
-.card_footer span {
+.card_footer p {
   color: white;
   font-size: 12px;
   margin-right: 6px;
   padding: 2px 8px 4px 8px;
   border-radius: 48px;
   background-color: var(--point-color);
+}
+
+.card_footer span {
+  opacity: 50%;
 }
 
 .footer-container {
