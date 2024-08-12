@@ -49,6 +49,21 @@ img {
   box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+  --point-color: #ff6600;
+}
+
+.card.type_orange {
+  --point-color: #ff6600;
+}
+.card.type_green {
+  --point-color: #17a651;
+}
+.card.type_blue {
+  --point-color: #0075ff;
+}
+
 /* Components */
 body {
   background-color: #d9d9d9;
@@ -68,7 +83,7 @@ body {
 .header-container h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #ff6600;
+  color: var(--point-color);
 }
 
 .header-container img {
