@@ -94,7 +94,7 @@ body {
   padding: 30px 0;
 }
 
-.menucard {
+.card {
   background-color: white;
   border-radius: 12px;
   overflow: hidden;
@@ -113,16 +113,16 @@ body {
   color: #0075ff;
 }
 
-.menucard_cover {
+.card_cover {
   position: relative;
 }
 
-.menucard_cover img {
+.card_cover img {
   width: 100%;
   margin-bottom: -48px;
 }
 
-.menucard_cover h2 {
+.card_cover h2 {
   font-size: 24px;
   font-weight: bold;
   color: inherit;
@@ -136,18 +136,18 @@ body {
   position: relative;
 }
 
-.menucard_desc {
+.card_desc {
   padding: 20px;
   font-size: 14px;
   color: #666666;
   line-height: 140%;
 }
 
-.menucard_desc span {
+.card_desc span {
   font-weight: bold;
 }
 
-.menucard_footer {
+.card_footer {
   padding: 26px 18px;
   display: flex;
   align-items: center;
@@ -157,20 +157,20 @@ body {
   margin-top: auto;
 }
 
-.menucard_footer span {
+.card_footer span {
   color: white;
   font-size: 12px;
   margin-right: 6px;
   padding: 2px 8px 4px 8px;
   border-radius: 48px;
 }
-.menucard_footer.orange_color_tag span {
+.card_footer.orange_color_tag span {
   background-color: #ff6600;
 }
-.menucard_footer.green_color_tag span {
+.card_footer.green_color_tag span {
   background-color: #17a651;
 }
-.menucard_footer.blue_color_tag span {
+.card_footer.blue_color_tag span {
   background-color: #0075ff;
 }
 
@@ -190,7 +190,7 @@ body {
     width: 50%;
     margin-bottom: 20px;
   }
-  .menucard_cover h2 {
+  .card_cover h2 {
     font-size: 2.5vw;
   }
 }
@@ -208,7 +208,7 @@ body {
   .header-container img {
     margin-bottom: 16px;
   }
-  .menucard_cover h2 {
+  .card_cover h2 {
     font-size: 24px;
   }
 }
