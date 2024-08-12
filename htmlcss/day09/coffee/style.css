@@ -172,8 +172,12 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   border-radius: 6px;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333;
 }
 
 .reviewCard span {
   text-align: right;
+  color: #111111;
 }
