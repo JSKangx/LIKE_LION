@@ -32,7 +32,6 @@ img {
 .l_profile {
   width: 80px;
   height: 80px;
-  box-shadow: inset 0 0 20px red;
   margin-right: 18px;
 }
 
@@ -50,20 +49,22 @@ img {
 }
 
 .contents_container {
-  box-shadow: inset 0 0 10px red;
   background-color: white;
   padding: 20px 24px;
   position: relative;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .userName {
-  box-shadow: inset 0 0 20px blue;
+  color: #6557c0;
 }
 
 .talk {
-  box-shadow: inset 0 0 20px purple;
   display: flex;
   align-items: center;
+  color: #666666;
 }
 
 /* 가상요소의 border를 이용해 삼각형을 만드는 방법 */
