@@ -103,15 +103,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.orange_color_menu {
-  color: #ff6600;
-}
-.green_color_menu {
-  color: #17a651;
-}
-.blue_color_menu {
-  color: #0075ff;
-}
 
 .card_cover {
   position: relative;
@@ -125,7 +116,7 @@ body {
 .card_cover h2 {
   font-size: 24px;
   font-weight: bold;
-  color: inherit;
+  color: var(--point-color);
   height: 48px;
   display: flex;
   align-items: center;
@@ -163,15 +154,7 @@ body {
   margin-right: 6px;
   padding: 2px 8px 4px 8px;
   border-radius: 48px;
-}
-.card_footer.orange_color_tag span {
-  background-color: #ff6600;
-}
-.card_footer.green_color_tag span {
-  background-color: #17a651;
-}
-.card_footer.blue_color_tag span {
-  background-color: #0075ff;
+  background-color: var(--point-color);
 }
 
 .footer-container {
