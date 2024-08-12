@@ -169,12 +169,16 @@ body {
   min-height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-sizing: border-box;
   border-radius: 6px;
   font-size: 14px;
   line-height: 140%;
   color: #333333;
+  height: 100%;
+}
+
+.reviewCard p {
+  flex-grow: 1;
 }
 
 .reviewCard span {
