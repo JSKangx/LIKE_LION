@@ -19,6 +19,7 @@ li {
 
 img {
   vertical-align: bottom;
+  max-width: 100%;
 }
 
 /* Typography */
@@ -34,12 +35,14 @@ body {
 .l_wrapper {
   max-width: 1076px;
   margin: 271px auto;
+  padding: 0 30px;
 }
 
 .l_row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -8px;
+  row-gap: 16px;
 }
 
 .l_col {
@@ -179,9 +182,30 @@ body {
 
 .reviewCard p {
   flex-grow: 1;
+  padding-bottom: 10px;
 }
 
 .reviewCard span {
   text-align: right;
   color: #111111;
+}
+
+/* Tablet 화면 미디어 쿼리 */
+@media (max-width: 850px) {
+  .l_col_tablets_4_12 {
+    width: calc(100% / 3);
+  }
+  .l_col_tablets_6_12 {
+    width: calc(100% / 2);
+  }
+}
+
+/* Moblie 화면 미디어 쿼리 */
+@media (max-width: 650px) {
+  .l_col_mobile_6_12 {
+    width: calc(100% / 2);
+  }
+  .l_col_mobile_12_12 {
+    width: calc(100% / 1);
+  }
 }
