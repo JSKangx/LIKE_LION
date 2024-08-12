@@ -117,6 +117,7 @@ h3 {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  height: 100%;
 }
 
 .card img {
@@ -125,6 +126,7 @@ h3 {
 
 .card .card-desc {
   padding: 20px 20px 32px;
+  flex-grow: 1;
 }
 
 .card-desc h1 {
