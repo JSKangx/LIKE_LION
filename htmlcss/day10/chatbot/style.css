@@ -1,6 +1,12 @@
 /* CSS Resets */
-body {
+body,
+p {
   margin: unset;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
 }
 
 /* Typography */
@@ -17,8 +23,61 @@ body {
   box-shadow: inset 0 0 20px red;
 }
 
+.l_row {
+  display: flex;
+  box-shadow: inset 0 0 20px yellow;
+  align-items: center;
+}
+
+.l_profile {
+  width: 80px;
+  height: 80px;
+  box-shadow: inset 0 0 20px red;
+  margin-right: 18px;
+}
+
 /* Components */
 .chatbot {
   background-color: #eeeeee;
   border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.contents_container {
+  box-shadow: inset 0 0 10px red;
+  background-color: white;
+  padding: 20px 24px;
+  position: relative;
+}
+
+.userName {
+  box-shadow: inset 0 0 20px blue;
+}
+
+.talk {
+  box-shadow: inset 0 0 20px purple;
+  display: flex;
+  align-items: center;
+}
+
+/* 가상요소의 border를 이용해 삼각형을 만드는 방법 */
+/* .talk::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-right-color: red;
+  position: absolute;
+  left: -24px;
+}  */
+
+/* 가상요소로 사각형을 만들고 rotate 하는 방법 */
+.talk::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+  left: -6px;
+  transform: rotate(45deg);
 }
