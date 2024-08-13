@@ -1,10 +1,17 @@
 /* CSS Resets */
 body,
-p {
+p,
+ul {
   margin: unset;
+  padding: unset;
 }
 
-h1 {
+li {
+  list-style-type: none;
+}
+
+h1,
+h2 {
   font-size: unset;
   font-weight: unset;
   margin: unset;
@@ -51,7 +58,6 @@ h1 {
   font-weight: bold;
   position: relative;
   /* color: white; */
-  box-shadow: inset 0 0 20px red;
   margin-bottom: 26px;
 }
 
@@ -69,7 +75,7 @@ h1 {
   letter-spacing: 0.18em;
 }
 
-.movie_info {
+.movie_desc {
   line-height: 160%;
   color: #999;
 }
@@ -79,6 +85,39 @@ h1 {
   min-width: 380px;
   flex-shrink: 0;
   flex-basis: 0;
-  padding: 120px 100px 60px 40px;
+  padding: 140px 100px 60px 40px;
   box-sizing: border-box;
+}
+
+.sidebar .movie_info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: inset 0 0 20px red;
+}
+
+.movie_info_sub {
+  box-shadow: inset 0 0 20px blue;
+}
+
+.movie_info_sub h2 {
+  font-weight: bold;
+  line-height: 160%;
+  /* color: white; */
+  margin-bottom: 20px;
+}
+
+.movie_info .genre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.genre li {
+  line-height: 160%;
+  padding: 0 14px;
+  background-color: #222222;
+  border-radius: 12px;
+  color: #aaaaaa;
+  font-size: 14px;
 }
