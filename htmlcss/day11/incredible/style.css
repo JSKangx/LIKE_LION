@@ -33,10 +33,17 @@ h2 {
 }
 
 /* Components */
+body {
+  background-color: #1e1e1e;
+}
+
 .cover {
   min-height: 676px;
-  background-image: url("images/cover.png");
+  background-image: linear-gradient(to top, #111111 0%, transparent 35%),
+    url("images/cover.png");
   background-size: cover;
+  position: relative;
+  bottom: -211px;
 }
 
 .main {
@@ -84,6 +91,7 @@ h2 {
   flex-basis: 0;
   padding: 140px 100px 60px 40px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .sidebar .movie_info {
