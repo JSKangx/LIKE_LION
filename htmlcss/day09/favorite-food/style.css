@@ -137,6 +137,7 @@ body {
 
 .card_desc span {
   font-weight: bold;
+  color: var(--point-color);
 }
 
 .card_footer {
