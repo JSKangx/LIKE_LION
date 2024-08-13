@@ -154,6 +154,11 @@ body {
   padding: 2px 8px 4px 8px;
   border-radius: 48px;
   background-color: var(--point-color);
+  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card_footer span {
