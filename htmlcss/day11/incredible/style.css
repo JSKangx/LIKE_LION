@@ -12,6 +12,9 @@ body {
 
 .cover {
   box-shadow: inset 0 0 20px red;
+  min-height: 676px;
+  background-image: url("images/cover.png");
+  background-size: cover;
 }
 
 .main {
