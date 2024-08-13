@@ -36,7 +36,7 @@ h1 {
 }
 
 .header_container {
-  padding: 126px;
+  padding: 126px 0;
 }
 
 .header .title {
