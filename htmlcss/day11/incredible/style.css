@@ -121,3 +121,22 @@ h2 {
   color: #aaaaaa;
   font-size: 14px;
 }
+
+.ratings {
+  height: 48px;
+  box-shadow: inset 0 0 10px red;
+  display: flex;
+}
+
+.ratings div {
+  box-shadow: inset 0 0 3px green;
+  flex-grow: 1;
+  background-image: url("images/star.png");
+  background-repeat: no-repeat;
+  background-size: 500%;
+  width: 20%;
+}
+
+.star_filled {
+  background-position-y: -48px;
+}
