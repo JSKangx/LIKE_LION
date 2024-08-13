@@ -141,10 +141,6 @@ body {
 
 .card_footer {
   padding: 26px 18px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 7px;
   background-color: #f4f4f4;
   margin-top: auto;
 }
@@ -152,7 +148,8 @@ body {
 .card_footer p {
   color: white;
   font-size: 12px;
-  margin-right: 6px;
+  display: inline-block;
+  margin: 0 6px 0 0;
   padding: 2px 8px 4px 8px;
   border-radius: 48px;
   background-color: var(--point-color);
