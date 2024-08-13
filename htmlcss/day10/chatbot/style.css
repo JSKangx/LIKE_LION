@@ -39,6 +39,14 @@ img {
   flex-shrink: 0;
 }
 
+/* Variables */
+:root {
+  --userName-color: #6557c0;
+}
+.response {
+  --userName-color: #35e792;
+}
+
 /* Components */
 body {
   background-color: #222222;
@@ -73,7 +81,7 @@ body {
 }
 
 .userName {
-  color: #6557c0;
+  color: var(--userName-color);
 }
 
 .talk {
@@ -99,11 +107,11 @@ body {
   content: "";
   width: 12px;
   height: 12px;
-  background-color: red;
+  background-color: white;
   position: absolute;
   left: -6px;
   transform: rotate(45deg);
 }
-/* .response .talk::before {
+.response .contents_container::before {
   background-color: red;
-} */
+}
