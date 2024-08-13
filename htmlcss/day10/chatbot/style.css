@@ -20,11 +20,9 @@ img {
   max-width: 640px;
   margin: 150px auto;
   padding: 0 20px;
-  box-shadow: inset 0 0 20px red;
 }
 
 .l_row {
-  box-shadow: inset 0 0 20px yellow;
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -123,7 +121,6 @@ body {
 }  */
 
 .alarm {
-  box-shadow: inset 0 0 5px red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +132,6 @@ body {
   flex-grow: 1;
   flex-shrink: 0;
   font-size: 12px;
-  box-shadow: inset 0 0 10px blue;
 }
 
 .alarm::before {
