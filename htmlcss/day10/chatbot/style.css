@@ -91,17 +91,6 @@ body {
   box-shadow: inset 0 0 20px red;
 }
 
-/* 가상요소의 border를 이용해 삼각형을 만드는 방법 */
-/* .talk::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 12px solid transparent;
-  border-right-color: red;
-  position: absolute;
-  left: -24px;
-}  */
-
 /* 가상요소로 사각형을 만들고 rotate 하는 방법 */
 .contents_container::before {
   content: "";
@@ -113,5 +102,17 @@ body {
   transform: rotate(45deg);
 }
 .response .contents_container::before {
-  background-color: red;
+  left: unset;
+  right: -6px;
 }
+
+/* 가상요소의 border를 이용해 삼각형을 만드는 방법 */
+/* .talk::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-right-color: red;
+  position: absolute;
+  left: -24px;
+}  */
