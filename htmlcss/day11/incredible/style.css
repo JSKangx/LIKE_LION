@@ -1,6 +1,21 @@
 /* CSS Resets */
-body {
+body,
+p {
   margin: unset;
+}
+
+h1 {
+  font-size: unset;
+  font-weight: unset;
+  margin: unset;
+}
+/* Typography */
+:root {
+  font-family: "arial";
+}
+
+.movie_info {
+  font-family: "Noto Sans KR";
 }
 
 /* Layouts */
@@ -10,6 +25,7 @@ body {
   margin: 60px auto;
 }
 
+/* Components */
 .cover {
   box-shadow: inset 0 0 20px red;
   min-height: 676px;
@@ -28,6 +44,28 @@ body {
   flex-basis: 0;
   min-width: 0;
   padding: 120px 60px 60px;
+}
+
+.movie_title {
+  font-size: 64px;
+  font-weight: bold;
+  position: relative;
+  /* color: white; */
+  box-shadow: inset 0 0 20px red;
+}
+
+.movie_title::before {
+  content: "NEW";
+  font-size: 0.1785em;
+  position: absolute;
+  background-color: #ff2e00;
+  width: 4.75em;
+  height: 2.3em;
+  text-align: center;
+  line-height: 2.3em;
+  top: -2.3em;
+  border-radius: 0.67em;
+  letter-spacing: 0.18em;
 }
 
 .sidebar {
