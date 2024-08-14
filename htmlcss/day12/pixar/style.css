@@ -1,0 +1,158 @@
+/* Reset */
+body, ul, p {
+  margin: unset;
+  padding: unset;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: unset;
+  font-weight: unset;
+}
+
+/* Typography */
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Layouts */
+.l_wrapper {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Components */
+body {
+  background-color: #000;
+  color: #888;
+}
+
+.menu {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 4px 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr) );
+  gap: 20px;
+}
+
+.contents {
+  padding: 60px 0;
+}
+
+.movie {
+  border-radius: 10px;
+  background-color: #111;
+  overflow: hidden;
+  height: 100%;
+}
+
+.movie_red    { color: #b92f19; }
+.movie_blue   { color: #336699; }
+.movie_brown  { color: #c67722; }
+.movie_orange { color: #e4512e; }
+.movie_purple { color: #8711d2; }
+.movie_green  { color: #75d211; }
+.movie_white  { color: #ddd; }
+
+.movie-cover {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 5px solid currentColor;
+  vertical_align: top;
+}
+
+.movie h2 {
+  font-weight: bold;
+  margin: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.movie p {
+  line-height: 1.3;
+  margin: 12px;
+  color: #444;
+}
+
+.container {
+  display: flex;
+}
+
+.container-sidebar {
+  width: 200px;
+}
+
+.container-main {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 220px;
+  display: block;
+  background-image: url(images/logo.png);
+  background-size: cover;
+  transition: all .4s;
+}
+
+.logo:hover {
+  background-image: url(images/logo-hover.png);
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-family: 'Caveat', cursive;
+  padding: 40px 0 30px;
+  font-size: 30px;
+  color: white;
+}
+
+.description {
+  display: flex;
+  gap: 40px;
+}
+
+.description-contents {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 0;
+}
+
+.description-cover {
+  width: 320px;
+}
+
+.description h3 {
+  color: salmon;
+  margin-bottom: 20px;
+}
+
+.footer {
+  border-top: 1px solid #555;
+  padding: 30px 0;
+  font-size: 1rem; 
+}
