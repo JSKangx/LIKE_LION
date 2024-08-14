@@ -1,5 +1,7 @@
 /* Reset */
-body, ul, p {
+body,
+ul,
+p {
   margin: unset;
   padding: unset;
 }
@@ -13,14 +15,19 @@ a {
   text-decoration: unset;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: unset;
   font-weight: unset;
 }
 
 /* Typography */
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Layouts */
@@ -37,6 +44,50 @@ body {
   color: #888;
 }
 
+.cover {
+  aspect-ratio: 24 / 9;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6082808123249299) 29%,
+    rgba(0, 0, 0, 0) 47%
+  );
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 200px;
+  z-index: 2;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cover h1 {
+  position: relative;
+  z-index: 3;
+  color: white;
+  top: -70px;
+  letter-spacing: 0.18em;
+}
+
 .menu {
   font-size: 20px;
   margin: 20px 0;
@@ -49,7 +100,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
@@ -64,19 +115,33 @@ body {
   height: 100%;
 }
 
-.movie_red    { color: #b92f19; }
-.movie_blue   { color: #336699; }
-.movie_brown  { color: #c67722; }
-.movie_orange { color: #e4512e; }
-.movie_purple { color: #8711d2; }
-.movie_green  { color: #75d211; }
-.movie_white  { color: #ddd; }
+.movie_red {
+  color: #b92f19;
+}
+.movie_blue {
+  color: #336699;
+}
+.movie_brown {
+  color: #c67722;
+}
+.movie_orange {
+  color: #e4512e;
+}
+.movie_purple {
+  color: #8711d2;
+}
+.movie_green {
+  color: #75d211;
+}
+.movie_white {
+  color: #ddd;
+}
 
 .movie-cover {
   max-width: 100%;
   height: auto;
   border-bottom: 5px solid currentColor;
-  vertical_align: top;
+  vertical-align: top;
 }
 
 .movie h2 {
@@ -113,7 +178,7 @@ body {
   display: block;
   background-image: url(images/logo.png);
   background-size: cover;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .logo:hover {
@@ -125,7 +190,7 @@ body {
 }
 
 .section-title {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   padding: 40px 0 30px;
   font-size: 30px;
   color: white;
@@ -154,5 +219,5 @@ body {
 .footer {
   border-top: 1px solid #555;
   padding: 30px 0;
-  font-size: 1rem; 
+  font-size: 1rem;
 }
