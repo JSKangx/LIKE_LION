@@ -162,19 +162,16 @@ body {
 }
 
 .ratings {
-  height: 48px;
-  overflow: hidden;
-}
-
-.ratings .stars {
   background-image: url("images/star.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 240px;
   height: 96px;
+  height: 48px;
+  overflow: hidden;
 }
 
-.ratings .stars::after {
+.ratings::after {
   content: "";
   display: block;
   background-image: url("images/star.png");
@@ -186,19 +183,19 @@ body {
 }
 
 /* 별점에 따른 변화 */
-.stars_1_5 {
+.score_1 {
   width: 20%;
 }
-.stars_2_5 {
+.score_2 {
   width: 40%;
 }
-.stars_3_5 {
+.score_3 {
   width: 60%;
 }
-.stars_4_5 {
+.score_4 {
   width: 80%;
 }
-.stars_5_5 {
+.score_5 {
   width: 100%;
 }
 
