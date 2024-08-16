@@ -226,7 +226,7 @@ body {
 @media (max-width: 1054px) {
   .sidebar {
     padding-left: 0;
-    width: auto;
+    width: 100%;
   }
   .members img:not(:last-child) {
     margin-right: 0;
