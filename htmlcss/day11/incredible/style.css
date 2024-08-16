@@ -109,9 +109,8 @@ body {
 }
 
 .sidebar {
-  min-width: 380px;
+  width: 380px;
   flex-shrink: 0;
-  flex-basis: 0;
   padding: 140px 100px 60px 40px;
   box-sizing: border-box;
   z-index: 1;
