@@ -98,7 +98,7 @@ body {
 
 .main_contents {
   flex-grow: 1;
-  flex-basis: 400px;
+  flex-basis: 480px;
   min-width: 0;
 }
 
@@ -192,4 +192,18 @@ body {
 
 .members img:not(:last-child) {
   margin-right: -20px;
+}
+
+@media (max-width: 1054px) {
+  .sidebar {
+    padding-left: 0;
+    width: auto;
+  }
+  .members img:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .information {
+    flex-direction: row;
+  }
 }
