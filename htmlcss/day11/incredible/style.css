@@ -80,7 +80,7 @@ body {
   padding: 120px 60px 60px;
 }
 
-.movie_title {
+.main_title {
   font-size: 64px;
   font-weight: bold;
   position: relative;
@@ -88,7 +88,7 @@ body {
   margin-bottom: 26px;
 }
 
-.movie_title::before {
+.main_title::before {
   content: "NEW";
   font-size: 0.1785em;
   position: absolute;
@@ -102,7 +102,7 @@ body {
   letter-spacing: 0.18em;
 }
 
-.movie_desc {
+.main-description {
   line-height: 160%;
   color: #999;
 }
@@ -115,20 +115,20 @@ body {
   z-index: 1;
 }
 
-.sidebar .movie_info {
+.sidebar .information {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.movie_info_sub h2 {
+.information_sub h2 {
   font-weight: bold;
   line-height: 160%;
   color: white;
   margin-bottom: 20px;
 }
 
-.movie_info .genre {
+.information .genre {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
