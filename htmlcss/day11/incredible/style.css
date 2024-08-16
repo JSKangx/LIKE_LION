@@ -164,10 +164,10 @@ body {
 .ratings {
   background-image: url("images/star.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 240px 96px;
   width: 240px;
-  height: 96px;
   height: 48px;
+  box-shadow: inset 0 0 20px red;
   overflow: hidden;
 }
 
@@ -176,13 +176,14 @@ body {
   display: block;
   background-image: url("images/star.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 240px 96px;
   background-position-y: -48px;
-  width: 60%;
+  width: 20%;
   height: 96px;
+  box-shadow: inset 0 0 20px blue;
 }
 
-/* 별점에 따른 변화 */
+/* 별점에 따른 변화 아직 이해 못 함*/
 .score_1 {
   width: 20%;
 }
