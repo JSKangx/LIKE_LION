@@ -163,15 +163,43 @@ body {
 
 .ratings {
   height: 48px;
-  display: flex;
+  overflow: hidden;
 }
 
-.ratings div {
-  flex-grow: 1;
+.ratings .stars {
   background-image: url("images/star.png");
   background-repeat: no-repeat;
-  background-size: 500%;
+  background-size: cover;
+  width: 240px;
+  height: 96px;
+}
+
+.ratings .stars::after {
+  content: "";
+  display: block;
+  background-image: url("images/star.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -48px;
+  width: 60%;
+  height: 96px;
+}
+
+/* 별점에 따른 변화 */
+.stars_1_5 {
   width: 20%;
+}
+.stars_2_5 {
+  width: 40%;
+}
+.stars_3_5 {
+  width: 60%;
+}
+.stars_4_5 {
+  width: 80%;
+}
+.stars_5_5 {
+  width: 100%;
 }
 
 .star_filled {
@@ -194,6 +222,7 @@ body {
   margin-right: -20px;
 }
 
+/* Media Query */
 @media (max-width: 1054px) {
   .sidebar {
     padding-left: 0;
