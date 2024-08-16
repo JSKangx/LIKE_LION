@@ -40,8 +40,7 @@ body {
 .cover {
   aspect-ratio: 1.7 / 1;
   position: relative;
-  bottom: -211px;
-  margin-top: -211px;
+  margin-bottom: -211px;
   z-index: 0;
 }
 
