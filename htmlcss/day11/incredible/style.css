@@ -53,11 +53,16 @@ body {
   background-color: var(--color-gray-90);
 }
 
+.article {
+  z-index: 0;
+  position: relative;
+  background-color: #111111;
+}
+
 .article-cover {
   aspect-ratio: 1.7 / 1;
   position: relative;
-  margin-bottom: -211px;
-  z-index: 0;
+  margin-bottom: -91px;
 }
 
 .article-cover::before {
@@ -87,9 +92,10 @@ body {
 .main {
   display: flex;
   flex-wrap: wrap;
-  background-color: #111111;
-  padding: 120px 60px 60px;
+  padding: 0 60px 60px;
   column-gap: 60px;
+  z-index: 3;
+  position: relative;
 }
 
 .main_contents {
@@ -101,21 +107,18 @@ body {
 .main_title {
   font-size: 64px;
   font-weight: bold;
-  position: relative;
   color: white;
   margin-bottom: 26px;
 }
 
-.main_title::before {
-  content: "NEW";
+.main_title span {
+  display: block;
   font-size: 0.1785em;
-  position: absolute;
   background-color: #ff2e00;
   width: 4.75em;
   height: 2.3em;
   text-align: center;
   line-height: 2.3em;
-  top: -2.3em;
   border-radius: 0.67em;
   letter-spacing: 0.18em;
 }
