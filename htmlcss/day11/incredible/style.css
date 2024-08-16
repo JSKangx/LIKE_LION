@@ -25,14 +25,14 @@ h2 {
   font-family: "Noto Sans KR";
 }
 
-/* Layouts */
-.l_wrapper {
+/* Components */
+.wrapper {
   width: auto;
   max-width: 1200px;
   margin: 60px auto;
+  padding: 0 30px;
 }
 
-/* Components */
 body {
   background-color: #1e1e1e;
 }
