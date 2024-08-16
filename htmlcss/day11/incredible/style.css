@@ -86,14 +86,16 @@ body {
 
 .main {
   display: flex;
+  flex-wrap: wrap;
   background-color: #111111;
+  padding: 120px 60px 60px;
+  column-gap: 60px;
 }
 
 .main_contents {
   flex-grow: 1;
-  flex-basis: 0;
+  flex-basis: 400px;
   min-width: 0;
-  padding: 120px 60px 60px;
 }
 
 .main_title {
@@ -124,10 +126,9 @@ body {
 }
 
 .sidebar {
-  width: 380px;
+  width: 240px;
   flex-shrink: 0;
-  padding: 140px 100px 60px 40px;
-  box-sizing: border-box;
+  padding: 20px 40px 0;
   z-index: 1;
 }
 
