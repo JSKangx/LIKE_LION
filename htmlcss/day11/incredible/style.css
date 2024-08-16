@@ -16,13 +16,29 @@ h2 {
   font-weight: unset;
   margin: unset;
 }
-/* Typography */
-:root {
-  font-family: "arial";
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
 }
 
-.movie_info {
-  font-family: "Noto Sans KR";
+/* Variables */
+:root {
+  /* Fonts */
+  --font-en: "arial";
+  --font-ko: "Noto Sans KR";
+
+  /* Color */
+  --color-gray-90: #1e1e1e;
+}
+
+/* Typography */
+:root {
+  font-family: var(--font-en);
+}
+
+.main-description {
+  font-family: var(--font-ko);
 }
 
 /* Components */
@@ -34,7 +50,7 @@ h2 {
 }
 
 body {
-  background-color: #1e1e1e;
+  background-color: var(--color-gray-90);
 }
 
 .article-cover {
@@ -57,7 +73,7 @@ body {
     rgba(17, 17, 17, 0) 100%
   );
   z-index: 2;
-  height: 240px;
+  height: 40%;
 }
 
 .article-cover img {
