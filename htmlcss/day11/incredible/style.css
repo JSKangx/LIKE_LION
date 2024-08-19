@@ -181,17 +181,17 @@ body {
 }
 
 .ratings::before {
-  content: "5점 만점에 3점";
+  content: " ";
   display: block;
   background-image: url("images/star.png");
-  background-size: 240px 96px;
+  background-size: inherit;
   background-position: left bottom;
   width: 0;
-  height: 96px;
+  height: inherit;
   box-shadow: inset 0 0 20px blue;
 }
 
-/* 별점에 따른 변화 아직 이해 못 함*/
+/* 별점에 따른 클래스 변화*/
 .ratings.score_1::before {
   width: 20%;
 }
@@ -209,22 +209,22 @@ body {
 }
 
 /* data- 방식 */
-.ratings[data-socre="0"]::before {
+.ratings[data-score="0"]::before {
   width: 0%;
 }
-.ratings[data-socre="1"]::before {
+.ratings[data-score="1"]::before {
   width: 20%;
 }
-.ratings[data-socre="2"]::before {
+.ratings[data-score="2"]::before {
   width: 40%;
 }
-.ratings[data-socre="3"]::before {
+.ratings[data-score="3"]::before {
   width: 60%;
 }
-.ratings[data-socre="4"]::before {
+.ratings[data-score="4"]::before {
   width: 80%;
 }
-.ratings[data-socre="5"]::before {
+.ratings[data-score="5"]::before {
   width: 100%;
 }
 
