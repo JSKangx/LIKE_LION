@@ -170,7 +170,6 @@ body {
 
 .ratings {
   background-image: url("images/star.png");
-  background-repeat: no-repeat;
   background-size: 240px 96px;
   width: 240px;
   height: 48px;
@@ -178,32 +177,51 @@ body {
   overflow: hidden;
 }
 
-.ratings::after {
-  content: "";
+.ratings::before {
+  content: "5점 만점에 3점";
   display: block;
   background-image: url("images/star.png");
-  background-repeat: no-repeat;
   background-size: 240px 96px;
-  background-position-y: -48px;
-  width: 20%;
+  background-position: left bottom;
+  width: 0;
   height: 96px;
   box-shadow: inset 0 0 20px blue;
 }
 
 /* 별점에 따른 변화 아직 이해 못 함*/
-.score_1 {
+.ratings.score_1::before {
   width: 20%;
 }
-.score_2 {
+.ratings.score_2::before {
   width: 40%;
 }
-.score_3 {
+.ratings.score_3::before {
   width: 60%;
 }
-.score_4 {
+.ratings.score_4::before {
   width: 80%;
 }
-.score_5 {
+.ratings.score_5::before {
+  width: 100%;
+}
+
+/* data- 방식 */
+.ratings[data-socre="0"]::before {
+  width: 0%;
+}
+.ratings[data-socre="1"]::before {
+  width: 20%;
+}
+.ratings[data-socre="2"]::before {
+  width: 40%;
+}
+.ratings[data-socre="3"]::before {
+  width: 60%;
+}
+.ratings[data-socre="4"]::before {
+  width: 80%;
+}
+.ratings[data-socre="5"]::before {
   width: 100%;
 }
 
