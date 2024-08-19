@@ -121,13 +121,13 @@ body {
   letter-spacing: 0.18em;
 }
 
-.main-description {
+.main-description p {
   line-height: 160%;
   color: #999;
   margin-bottom: 1.6em;
 }
 
-.main-description:last-child {
+.main-description p:last-child {
   margin-bottom: none;
 }
 
