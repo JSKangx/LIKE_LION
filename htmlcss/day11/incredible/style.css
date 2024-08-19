@@ -124,6 +124,11 @@ body {
 .main-description {
   line-height: 160%;
   color: #999;
+  margin-bottom: 1.6em;
+}
+
+.main-description:last-child {
+  margin-bottom: none;
 }
 
 .sidebar {
