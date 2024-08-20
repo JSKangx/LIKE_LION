@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: brown;
 }
@@ -10,7 +14,9 @@ body {
   background-color: skyblue;
   padding: 10px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  height: 400px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .frog {
   background-color: mediumseagreen;
