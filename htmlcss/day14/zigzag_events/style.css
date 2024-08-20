@@ -13,13 +13,15 @@ body {
 /* Variables */
 :root {
   /* Color */
-  --color-purple: #6230a2;
+  --color-purple-20: #ebdbff;
+  --colro-purple-50: #c89dff;
+  --color-purple-100: #6230a2;
   --color-beige: #fff5ed;
 }
 
 /* Components */
 .type-purple {
-  background-color: var(--color-purple);
+  background-color: var(--color-purple-100);
 }
 
 .type-beige {
@@ -28,8 +30,10 @@ body {
 
 .section-header {
   box-shadow: inset 0 0 20px red;
+  padding-top: 92px;
 }
 
 .section-contents {
-  box-shadow: inset 0 0 20px blue;
+  box-shadow: inset 0 0 20px yellow;
+  padding: 100px 0;
 }
