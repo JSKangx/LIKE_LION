@@ -232,6 +232,7 @@ img {
   display: grid;
   background-color: var(--color-white);
   grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
 }
 
 .card:first-child .card-cover::before {
