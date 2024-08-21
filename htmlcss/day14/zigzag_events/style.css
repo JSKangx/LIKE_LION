@@ -60,6 +60,7 @@ strong {
 /* Components */
 .type-purple {
   background-color: var(--color-purple-100);
+  display: none; /* 임시로 안 보이게 설정 */
 }
 
 .type-beige {
@@ -129,6 +130,10 @@ strong {
 .section-contents {
   box-shadow: inset 0 0 20px yellow;
   padding: 100px 0;
+}
+
+.grid_type-horizion {
+  display: grid;
 }
 
 .list {
