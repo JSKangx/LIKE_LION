@@ -1,0 +1,61 @@
+/* Resets */
+body {
+  margin: unset;
+}
+
+h1, h2 {
+  margin: unset;
+  font-weight: unset;
+  font-size: unset;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Layouts */
+.l_wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Components */
+body {
+  background-color: #ddd;
+}
+
+.header {
+  background-color: #eee;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: orangered;
+}
+
+.section-container {
+  background-color: white;
+  display: flex;
+}
+
+.section-title {
+  font-size: 30px;
+  padding: 20px 60px 20px 20px;
+  font-weight: 600;
+  color: rebeccapurple;
+}
+
+.section-contents {
+  flex-grow: 1;
+  box-shadow: inset 0 0 20px dodgerblue;
+}

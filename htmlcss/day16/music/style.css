@@ -1,0 +1,23 @@
+/* Reset */
+body {
+  margin: unset;
+}
+
+/* Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.circle {
+  margin: auto;
+  width: 480px;
+  aspect-ratio: 1/1;
+  box-shadow: inset 0 0 20px red;
+}

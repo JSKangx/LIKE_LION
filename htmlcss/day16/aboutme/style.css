@@ -1,0 +1,57 @@
+
+body, p, ul, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  line-height: 1.8;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background-color: #111;
+  color: #999;
+}
+
+.profile {
+  width: 320px;
+  margin: 100px auto;
+}
+
+.profile-title {
+  font-size: 35px;    
+  line-height: 1.5em;
+  font-style: italic;
+}
+
+.profile-title h1 {
+  color: deeppink;
+  margin-bottom: 50px;
+  margin-left: -2vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  border-bottom: 10px solid #111;
+  padding: 10px 0 20px;
+  box-shadow: 0 0 10px 5px #111;
+}
+
+.profile-title p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+  font-family: sans-serif;
+  color: #666;
+}

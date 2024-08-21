@@ -1,0 +1,28 @@
+/* Reset */
+body {
+  margin: unset;
+}
+
+/* CSS Variables */
+:root {
+  --color-green: #8FBC8F;
+  --color-red: #FF2E00;
+  --color-white: #fff;
+  --color-gray-50: #999;
+  --color-gray-80: #222;
+  --color-gray-90: rgb( var(--color-gray-90-rgb) / 1 ); 
+  --color-gray-90-rgb: 17 17 17; /* #111 */
+  --color-black: #000;
+}
+
+/* Component */
+body {
+  background-color: var(--color-gray-90);
+  color: var(--color-green);
+  text-align: center;
+}
+
+.l_wrapper {
+  margin: 100px auto;
+  max-width: 240px;
+}
