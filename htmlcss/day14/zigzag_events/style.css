@@ -75,7 +75,6 @@ img {
 /* Components */
 .type-purple {
   background-color: var(--color-purple-100);
-  display: none; /* 임시로 안 보이게 설정 */
 }
 
 .type-beige {
@@ -198,8 +197,6 @@ img {
 }
 
 .contents-list li {
-  display: flex;
-  align-items: center;
   margin-bottom: 12px;
 }
 
@@ -209,7 +206,7 @@ img {
 
 .contents-list li::before {
   content: "";
-  flex-shrink: 0;
+  display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
