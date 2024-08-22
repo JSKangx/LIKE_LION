@@ -51,3 +51,26 @@ body {
   justify-content: center;
   border-radius: 50%;
 }
+
+.wheel {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 20px red;
+}
+
+.wheel-item {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.wheel-item:nth-child(1) {transform: rotate(calc(45deg * 0)) translateY(-300px)}
+.wheel-item:nth-child(2) {transform: rotate(calc(45deg * 1)) translateY(-300px)}
+.wheel-item:nth-child(3) {transform: rotate(calc(45deg * 2)) translateY(-300px)}
+.wheel-item:nth-child(4) {transform: rotate(calc(45deg * 3)) translateY(-300px)}
+.wheel-item:nth-child(5) {transform: rotate(calc(45deg * 4)) translateY(-300px)}
+.wheel-item:nth-child(6) {transform: rotate(calc(45deg * 5)) translateY(-300px)}
+.wheel-item:nth-child(7) {transform: rotate(calc(45deg * 6)) translateY(-300px)}
+.wheel-item:nth-child(8) {transform: rotate(calc(45deg * 7)) translateY(-300px)}
