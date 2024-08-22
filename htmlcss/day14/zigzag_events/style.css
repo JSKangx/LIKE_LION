@@ -162,6 +162,18 @@ img {
   background-image: url("images/photo01.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.item-cover::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--color-gray-100-rgb) / 0.3);
+  position: absolute;
+  z-index: -1;
+
 }
 
 .item-cover.craft {
@@ -335,6 +347,7 @@ img {
     padding: 30px 0;
   }
   .section-header {
+    padding-top: 45px;
     flex-direction: column;
   }
   .section-header .header-title {
@@ -346,7 +359,11 @@ img {
   .header-description::before {
     display: none;
   }
-  .list-item {
+  .list .list-item {
     flex-direction: column;
+  }
+
+  .list-item .item-cover {
+    width: auto;
   }
 }
