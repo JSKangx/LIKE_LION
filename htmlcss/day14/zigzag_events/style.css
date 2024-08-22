@@ -180,11 +180,13 @@ img {
 }
 
 .item-contents {
+  display: grid;
   flex-grow: 1;
   min-width: 0;
   padding: 16px 21px 21px;
   background-color: var(--color-white);
   box-shadow: inset 0 0 10px blue;
+  align-content: center;
 }
 
 .item-title {
@@ -201,6 +203,10 @@ img {
 
 .contents-list li {
   font-size: 1.4rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
 .contents-list li::before {
