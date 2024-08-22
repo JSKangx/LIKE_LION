@@ -1,0 +1,9 @@
+/* CSS Variables */
+:root {
+  --font-ko: "Noto Sans KR", sans-serif;
+}
+
+/* Typography */
+:root {
+  font-family: var(--font-ko);
+}

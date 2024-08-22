@@ -1,0 +1,33 @@
+/* Reset */
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* Components */
+body {
+  background-color: #98cee8;
+}
+
+.choice {
+  width: 600px;
+  margin: 100px auto;
+  display: flex; 
+  gap: 20px;
+}
+
+.choice-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.choice-item-icon {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #caf0ff;
+}
+
+.choice-item-icon img {
+
+}
