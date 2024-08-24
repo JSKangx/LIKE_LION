@@ -27,6 +27,7 @@
 
 #### if...else 문
 
+
     ```js
     if (조건식) {
         // 조건식이 true면 이 코드 블록이 실행.
@@ -376,14 +377,20 @@
 - 자바스크립트 엔진은 조건식의 평가 결과를 불리언 타입으로 암묵적 타입 변환한다.
 - 이 때 불리언 타입이 아닌 값을 Truthy(참으로 평가되는 값) 또는 Falsy(거짓으로 평가되는 값)으로 구분한다. Truthy값은 true로, Falsy값은 false로 암묵적 타입 변환한다.
 
-    > false로 평가되는 값
-    > false
-    > undefined
-    > null
-    > 0, -0
-    > NaN
-    > '' (빈 문자열)
+    > false로 평가되는 값 : false, undefined, null, 0, -0, NaN, '' (빈 문자열)
 
+    ```js
+    // 전달받은 인수가 Falsy 값이면 true, Truthy 값이면 false를 반환
+    function (v) {
+        return !v;
+    }
+    // 전달받은 인수가 Falsy 값이면 false, Truthy 값이면 true를 반환
+    function (v) {
+        return !!v;
+    }
+    ```
+
+### 명시적 타입 변환
 
 
 
@@ -398,3 +405,6 @@
 - [ ] `for`문의 실행 순서
 - [ ] `swtich` 문에서의 `break`의 중요성과 의도적인 폴스루 활용
 - [ ] 암묵적 타입 변환이 필요한 때
+
+### 찾아본 내용
+- [ ] `new` 연산자의 역할
