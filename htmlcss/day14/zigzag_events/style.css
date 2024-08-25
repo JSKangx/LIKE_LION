@@ -239,7 +239,7 @@ img {
   background-color: var(--color-white);
 }
 
-.card {
+.card-columns {
   box-shadow: 0 0 12px 0 rgb(var(--color-gray-100-rgb) / 0.2);
   display: grid;
   background-color: var(--color-white);
@@ -247,7 +247,7 @@ img {
   grid-template-rows: auto 1fr minmax(64px, auto);
 }
 
-.card:first-child .card-cover::before {
+.card-columns:first-child .card-columns-cover::before {
   content: "";
   display: block;
   position: absolute;
@@ -258,7 +258,7 @@ img {
   height: 110px;
 }
 
-.card-cover {
+.card-columns-cover {
   aspect-ratio: 1.333 / 1;
   position: relative;
   background-image: url("images/cover01.png");
@@ -266,27 +266,27 @@ img {
   border-bottom: 4px solid var(--color-gray-100);
 }
 
-.card:nth-child(2) .card-cover {
+.card-columns:nth-child(2) .card-columns-cover {
   background-image: url("images/cover02.png");
 }
-.card:nth-child(3) .card-cover {
+.card-columns:nth-child(3) .card-columns-cover {
   background-image: url("images/cover03.png");
 }
 
-.card-contents {
+.card-columns-contents {
   padding: 20px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-.card-contents .tag {
+.card-columns-contents .tag {
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
 }
 
-.card-contents .tag a {
+.card-columns-contents .tag a {
   font-size: 1.4rem;
   font-weight: 600;
   padding: 2px 12px 3px;
@@ -295,17 +295,17 @@ img {
   border-radius: 12px;
 }
 
-.card-contents h2 {
+.card-columns-contents h2 {
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.card-contents p {
+.card-columns-contents p {
   font-size: 1.4rem;
   line-height: 1.57;
 }
 
-.card-footer {
+.card-columns-footer {
   padding: 14px 20px 16px 0;
   margin-left: 20px;
   display: flex;
@@ -313,19 +313,19 @@ img {
   align-items: center;
 }
 
-.card-footer-text {
+.card-columns-footer-text {
   font-size: 1.4rem;
   color: var(--color-gray-50);
 }
 
-.card-footer-icons {
+.card-columns-footer-icons {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
-.card-footer-icons img {
+.card-columns-footer-icons img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -334,7 +334,7 @@ img {
   margin-right: -6px;
 }
 
-.card-footer-icons img:last-child {
+.card-columns-footer-icons img:last-child {
   margin-right: unset;
 }
 
@@ -347,7 +347,7 @@ img {
     padding-top: 45px;
     flex-direction: column;
   }
-  .section-header .header-title {
+  .section-header .section-title {
     margin-bottom: 20px;
   }
   .header-description {
@@ -359,7 +359,6 @@ img {
   .l_grid.type-rows .card-rows {
     flex-direction: column;
   }
-
   .card-rows .card-rows-cover {
     width: auto;
     padding: 15px 0;
