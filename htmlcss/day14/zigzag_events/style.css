@@ -30,20 +30,6 @@ img {
   vertical-align: bottom;
 }
 
-/* Typography */
-:root {
-  font-family: "Montserrat", sans-serif;
-  font-size: 62.5%;
-}
-
-/* Layouts */
-.l_wrapper {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 40px;
-
-}
-
 /* Variables */
 :root {
   /* Color */
@@ -59,6 +45,33 @@ img {
   --color-gray-90: #111111;
   --color-gray-100: #000000;
   --color-gray-100-rgb: 0 0 0;
+}
+
+/* Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+/* Layouts */
+.l_wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.l_grid {
+  display: grid;
+}
+
+.l_grid.type-rows {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  row-gap: 30px;
+}
+
+.l_grid.type-columns {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 30px;
 }
 
 /* Re-usable components */
@@ -135,16 +148,8 @@ img {
   padding: 100px 0;
 }
 
-.list {
-  display: grid;
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-  gap: 30px;
-
-}
-
 .list-item {
   display: flex;
-
   width: auto;
 }
 
@@ -232,12 +237,6 @@ img {
 
 .type-beige .section-title strong::after {
   background-color: var(--color-white);
-}
-
-.grid_type-horizion {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
 }
 
 .card {
