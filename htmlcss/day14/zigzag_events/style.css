@@ -44,6 +44,8 @@ img {
   --color-gray-50: #999999;
   --color-gray-90: #111111;
   --color-gray-100: #000000;
+
+  --color-purple-100-rgb: 98 48 162;
   --color-gray-100-rgb: 0 0 0;
 }
 
@@ -173,7 +175,7 @@ img {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: rgb(var(--color-gray-100-rgb) / 0.3);
+  background-color: rgb(var(--color-purple-100-rgb) / 0.5);
   position: absolute;
   z-index: -1;
 
