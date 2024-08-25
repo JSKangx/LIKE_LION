@@ -402,6 +402,178 @@
 
 - (2) Object.prototype.toSrting 메서드를 이용하는 방법
 
+    ```js
+    (1).toString(); // "1"
+    ```
+
+- (3) 문자열 연결 연산자를 이용하는 방법 (앞에서 설명)
+
+#### 3-2. 숫자 타입으로 변환
+- (1) Number 생성자 함수를 new 연산자 없이 호출하는 방법
+
+    ```js
+    Number("10.53"); // 10.53
+    ```
+
+- (2) parseInt, parseFloat 함수를 사용하는 방법 (문자열에만 가능)
+
+    ```js
+    parseInt('10.53'); // 10 -> 문자열을 정수(소수점 이하 무시)로 변환
+    parseFloat('10.53'); // 10.53 -> 문자열을 부동 소수점 숫자로 변환
+
+- (3) 단항 산술 연산자를 이용 (앞에서 설명)
+- (4) * 산술 연산자를 이용 (앞에서 설명)
+
+#### 3-3. 불리언 타입으로 변환
+- (1) Boolean 생성자를 new 연산자 없이 호출하는 방법
+    - false로 평가되는 값 : false, undefined, null, 0, -0, NaN, '' (빈 문자열)
+- (2) ! 부정 논리 연산자를 두 번 사용하는 방법
+
+### 4. 단축 평가
+#### 4-1. 논리 연산자를 사용한 단축 평가
+- 논리합 또는 논리곱 연산자 표현식은 언제나 2개의 피연산자 중 어느 한쪽으로 평가된다.
+- 논리곱(&&) 연산자는 두 개의 피연산자가 모두 true로 평가될 때 true를 반환한다. 
+
+    ```js
+    'Cat' && 'Dog' // "Dog"
+    ```
+
+    - 첫 번째 피연산자 'Cat'은 Truthy 값이므로 true로 평가.
+    - 두 번째 피연산자가 위 논리곱 연산자 표현식의 평가 결과를 결정
+    - 따라서, 논리 연산의 결과를 결정하는 두 번째 피연산자를 그대로 반환.
+
+- 논리합(||) 연산자는 두 개의 피 연산자 중 하나만 true로 평가되어도 true를 반환.
+
+    ```js
+    'Cat' || 'Dog' // "Cat"
+    ```
+
+    - 'Cat'이 Truthy 값이기 때문에, 두 번째 피연산자까지 평가해보지 않아도 표현식을 평가할 수 있다.
+    - 논리 연산의 결과를 결정한 첫 번째 피연산자인 'Cat'을 그대로 반환.
+
+- 논리곱 연산자와 논리합 연산자는 피연산자를 **타입 변환하지 않고 그대로 반환**한다. 이를 **단축 평가**라 한다.
+- **단축 평가는 표현식을 평가하는 도중에 평가 결과가 확정된 경우 나머지 평가 과정을 생략하는 것**을 말한다.
+- 단축 평가를 사용하면 if문을 대체할 수 있다. 
+- 어떤 조건이 Truthy값일 때 무언가를 해야 한다면 논리곱 연산자 표현식을 쓰자.
+
+    ```js
+    var done = true;
+    var message = '';
+
+    // 주어진 조건이 true일 때
+    if (done) message = '완료';
+
+    // 단축 평가로 대체해보자.
+    message = done && '완료'; // 논리곱의 결과를 결정하는 '완료'를 그대로 반환, 할당
+    ```
+
+- 어떤 조건이 Falsy값일 때 무언가를 해야 한다면 논리합 연산자를 쓰자.
+
+    ```js
+    var done = false;
+    var message = '';
+
+    // 주어진 조건이 false 일 때 if 문
+    if(done) message = '미완료';
+
+    // 단축평가로 대체해보자.
+    message = done || '미완료'; // 논리합의 결과를 결정하는 '미완료'
+    ```
+
+- 위 두가지 내용을 삼항 조건 연산자로 대체해 보자.
+
+    ```js
+    var done = true;
+    var message = '';
+
+    message = done ? '완료' : '미완료';
+    ```
+
+- 단축 평가는 다음과 같은 상황에서 유용하게 사용됨 (나중에 배울 개념)
+    - (1) 객체를 가리키기를 기대하는 변수가 null 또는 undefined가 아닌지 확인하고 프로퍼티를 참조할 때.
+        
+        ```js
+        // 객체를 가리키기를 기대하는 변수의 값이 객체가 아니라 null 또는 undefined인 경우 객체의 프로퍼티를 참조하면 타입 에러가 발생하고 프로그램이 강제 종료된다.
+        var elem = null;
+        // 아무것도 아닌(null) 객체의 프로퍼티를 참조할 수 없다.
+        var value = elem.value; // TypeError: Cannot read
+
+        // 단축 평가를 사용하면 에러를 발생시키지 않는다.
+        var elem = null;
+        // elem이 null이나 undefined와 같은 Falsy 값이면 elem으로 평가되고
+        // elem이 Truthy 값이면 elem.value로 평가된다.
+        var value = elem && elem.value; // 논리곱 표현식의 결과를 결정하는 elem이 그대로 반환, 할당
+        ```
+
+    - (2) 함수 매개변수에 기본값을 설정할 때
+        - 함수를 호출할 때 인수를 전달하지 않으면 매개변수에는 undefined가 할당된다. 이 때 단축 평가를 사용해 매개변수의 기본값을 설정하면 undefined로 인해 발생할 수 있는 에러를 방지할 수 있다.
+
+        ```js
+        // 단축 평가를 사용한 매개변수의 기본값 설정
+        function getStringLength(str) {
+            // 빈 문자열은 Falsy값. 
+            str = str || ''; // str이 Truthy면 str을, 아니면 ''을 반환.
+            return str.length;
+        }
+
+        getStringLength();      // str = ''; -> str.length; 0
+        getStringLength('hi')   // str = 'hi'; -> str.length; 2
+
+        // 아래의 함수로 단축 표현 가능
+        // str = ''; 명시적 타입 변환(문자열) 표현식임.
+        function getStringLength(str = '') {
+            return str.length;
+        }
+        ```
+
+#### 4-2. 옵셔널 체이닝 연산자
+- ES11에서 도입된 옵셔널 체이닝 연산자 `?.`는 좌항의 피연산자가 null 또는 undefined인 경우 undefined를 반환하고, 그렇지 않으면 **우항의 프로퍼티 참조**를 이어간다.
+
+    ```js
+    var elem = null;
+
+    var value = elem?.value;
+    // elem이 null 이기 때문에 undefined를 반환.
+    // 만약 elem이 null이나 undefined가 아니었다면 elem.value를 반환했을 것.
+    ```
+
+- 객체를 가리키기를 기대하는 변수가 null 또는 undefined가 아닌지 확인하고 프로퍼티를 참조할 때 유용하다. (옵셔널 체이닝 연산자가 도입되기 전에는 논리 연산자를 사용한 단축 평가를 통해 확인했다)
+- 논리 연산자는 좌항 피연산자가 Falsy값이면 좌항 피연산자를 그대로 반환한다. 하지만 0이나 ''(빈 문자열)은 객체로 평가될 때도 있다.
+
+    ```js
+    var str = '';
+
+    // 문자열의 길이를 참조하기 위한 표현식
+    var length = str && str.length; // str이 Falsy 값이기에 str을 반환
+    console.log(length); // ''
+
+    // 하지만 옵셔널 체이닝 연산자는 좌항 피연산자가 Falsy값이라도 null 또는 undefined가 아니면 우항의 프로퍼티 참조를 이어나간다.
+    var length = str?.length;
+    // str이 null이나 undefined가 아니기 때문에 str.length를 반환
+    console.log(length); // 0
+    ```
+
+#### 4-3. null 병합 연산자
+- 좌항의 피연산자가 null 또는 undefined인 경우 **우항의 피연산자를 반환**, 그렇지 않으면 **좌항의 피연산자를 반환**
+- 변수에 기본값을 설정할 때 유용하다.
+
+    ```js
+    var foo = null ?? 'default string'; // null이기 때문에 우항의 피연산자를 반환
+    console.log(foo); // 'default string'
+    ```
+
+- null 병합 연산자가 도입되기 이전에는 논리합 연산자를 사용한 단축 평가를 통해 변수에 기본값을 설정했다.
+    - 좌항의 피연산자가 Falsy값이면 우항의 피연산자를 반환한다.그런데 0이나 ''(빈문자열)도 기본값으로서 유효하다면 예기치 않은 동작이 발생할 수 있다.
+
+    ```js
+    // ''(빈 문자열)도 기본값으로 유효하지만 'default string'을 반환
+    var foo = '' || 'default string'; 
+    console.log(foo); // "default string"
+
+    // 하지만 null 병합 연산자는 좌항의 피연산자가 null 또는 undefined가 아니면 좌항의 피연산자를 그대로 반환
+    var foo = '' ?? 'default string';
+    console.log(foo); // ""
+    ```
 
 * * *
 ## 질문할 내용
@@ -416,6 +588,7 @@
 ### 1. `for`문의 실행 순서
 ### 2. `swtich` 문에서의 `break`의 중요성과 의도적인 폴스루 활용
 ### 3. 암묵적 타입 변환이 필요한 때
+### 4. 단축 평가로 if문을 대체할 수 있다?
 
 * * *
 ## 찾아본 내용
