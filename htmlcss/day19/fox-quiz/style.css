@@ -15,9 +15,17 @@ img {
     max-width: 100%;
 }
 
+/* Variables */
+:root {
+    /* Color */
+    --color-brown-30: #E8BC9C;
+    --color-brown-50: #9C6035;
+    --color-brown-100: #46260E;
+}
+
 /* Typography */
 :root {
-    font-family: 'Arial';
+    font-family: 'arial';
     font-size: 62.5%;
 }
 
@@ -49,13 +57,13 @@ body {
 }
 
 .article-contents {
-    background-color: #9C6035;
+    background-color: var(--color-brown-50);
     padding: 60px 20px 36px;
-    color: #E8BC9C;
+    color: var(--color-brown-30);
     line-height: 1.2;
     position: relative;
     border-radius: 0 0 30px 30px;
-    border-bottom: 10px solid #46260E;
+    border-bottom: 10px solid var(--color-brown-100)
 }
 
 .article-contents::before {
@@ -63,7 +71,6 @@ body {
     display: block;
     width: 100%;
     height: 50px;
-    aspect-ratio: 6/1;
     background-image: url('images/green.png');
     background-repeat: no-repeat;
     position: absolute;
