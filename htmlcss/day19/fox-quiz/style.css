@@ -10,6 +10,11 @@ h1 {
     margin: unset;
 }
 
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
 /* Components */
 .bg {
     display: grid;
@@ -25,7 +30,7 @@ h1 {
 }
 
 .article {
-    /* box-shadow: inset 0 0 20px red; */
+    background-color: white;
 }
 
 .article-cover {
