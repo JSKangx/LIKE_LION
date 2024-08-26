@@ -348,16 +348,18 @@ img {
 /* Media query */
 @media (max-width: 710px) {
   .section-header {
-    flex-direction: column;
     margin-bottom: 50px;
   }
-  .section-header .section-title {
+  .title {
+    flex-direction: column;
+  }
+  .title-headings {
     margin-bottom: 30px;
   }
-  .header-description {
-    padding: 0 20px;
+  .title-description {
+    padding-top: 0 20px;
   }
-  .header-description::before {
+  .title-description::before {
     display: none;
   }
   .l_grid.type-rows .card-rows {
