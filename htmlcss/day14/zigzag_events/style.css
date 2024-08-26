@@ -245,7 +245,7 @@ img {
   box-shadow: inset 0 -0.6em 0 0 var(--color-white);
 }
 
-.card-columns {
+.card {
   box-shadow: 0 0 12px 0 rgb(var(--color-gray-100-rgb) / 0.2);
   display: grid;
   background-color: var(--color-white);
@@ -253,7 +253,7 @@ img {
   grid-template-rows: auto 1fr minmax(64px, auto);
 }
 
-.card-columns:first-child .card-columns-cover::before {
+.card:first-child .card-cover::before {
   content: "";
   display: block;
   position: absolute;
@@ -264,7 +264,7 @@ img {
   height: 110px;
 }
 
-.card-columns-cover {
+.card-cover {
   aspect-ratio: 1.333 / 1;
   position: relative;
   background-image: url("images/cover01.png");
@@ -272,27 +272,27 @@ img {
   border-bottom: 4px solid var(--color-gray-100);
 }
 
-.card-columns:nth-child(2) .card-columns-cover {
+.card:nth-child(2) .card-cover {
   background-image: url("images/cover02.png");
 }
-.card-columns:nth-child(3) .card-columns-cover {
+.card:nth-child(3) .card-cover {
   background-image: url("images/cover03.png");
 }
 
-.card-columns-contents {
+.card-contents {
   padding: 20px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-.card-columns-contents .tag {
+.card-contents .tag {
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
 }
 
-.card-columns-contents .tag a {
+.card-contents .tag a {
   font-size: 1.4rem;
   font-weight: 600;
   padding: 2px 12px 3px;
@@ -301,17 +301,17 @@ img {
   border-radius: 12px;
 }
 
-.card-columns-contents h2 {
+.card-contents h2 {
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.card-columns-contents p {
+.card-contents p {
   font-size: 1.4rem;
   line-height: 1.57;
 }
 
-.card-columns-footer {
+.card-footer {
   padding: 14px 20px 16px 0;
   margin-left: 20px;
   display: flex;
@@ -319,19 +319,19 @@ img {
   align-items: center;
 }
 
-.card-columns-footer-text {
+.card-footer-text {
   font-size: 1.4rem;
   color: var(--color-gray-50);
 }
 
-.card-columns-footer-icons {
+.card-footer-icons {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
-.card-columns-footer-icons img {
+.card-footer-icons img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -340,7 +340,7 @@ img {
   margin-right: -6px;
 }
 
-.card-columns-footer-icons img:last-child {
+.card-footer-icons img:last-child {
   margin-right: unset;
 }
 
@@ -356,10 +356,13 @@ img {
     margin-bottom: 30px;
   }
   .title-description {
-    padding-top: 0 20px;
+    max-width: 400px;
   }
   .title-description::before {
     display: none;
+  }
+  .title-controls {
+    margin-left: unset;
   }
 }
 
