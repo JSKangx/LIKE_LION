@@ -29,14 +29,9 @@ img {
 }
 
 .wrapper {
-    box-shadow: inset 0 0 20px gold;
     width: 300px;
     inset: 0;
     margin: auto;
-}
-
-.article {
-    background-color: white;
 }
 
 .article-cover {
@@ -54,10 +49,12 @@ img {
 
 .article-contents {
     background-color: #9C6035;
-    padding: 60px 20px 46px;
+    padding: 60px 20px 36px;
     color: #E8BC9C;
     line-height: 1.2;
     position: relative;
+    border-radius: 0 0 30px 30px;
+    border-bottom: 10px solid #46260E;
 }
 
 .article-contents::before {
@@ -79,6 +76,5 @@ img {
 }
 
 .article-contents-description {
-    box-shadow: inset 0 0 10px red;
     font-size: 1.6rem;
 }
