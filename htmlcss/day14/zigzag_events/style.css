@@ -140,20 +140,9 @@ img {
 
 .title-headings strong {
   font-weight: bold;
-  width: fit-content;
-  position: relative;
-  z-index: 2;
 }
-
-.title-headings strong::after {
-  content: "";
-  width: 100%;
-  height: 26px;
-  background-color: var(--color-red-100);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
+.type-purple .title-headings strong{
+  box-shadow: inset 0 -0.6em 0 0 var(--color-red-100);
 }
 
 .title-description {
@@ -240,8 +229,8 @@ img {
   color: var(--color-red-50);
 }
 
-.type-beige .title-headings strong::after {
-  background-color: var(--color-white);
+.type-beige .title-headings strong {
+  box-shadow: inset 0 -0.6em 0 0 var(--color-white);
 }
 
 .card-columns {
