@@ -212,12 +212,12 @@ img {
   margin-bottom: 14px;
 }
 
-.panal-list {
+.list {
   display: grid;
   row-gap: 12px;
 }
 
-.panal-list li {
+.list li {
   font-size: 1.4rem;
   display: grid;
   grid-auto-flow: column;
@@ -225,7 +225,7 @@ img {
   align-items: center;
 }
 
-.panal-list li::before {
+.list li::before {
   content: "";
   display: inline-block;
   width: 10px;
