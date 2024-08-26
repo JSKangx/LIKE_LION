@@ -368,7 +368,7 @@ img {
   }
   .panal .panal-cover {
     width: auto;
-    padding: 15px 0;
+    aspect-ratio: 12/4;
   }
   .panal .panal-contents {
     flex-basis: 0;
