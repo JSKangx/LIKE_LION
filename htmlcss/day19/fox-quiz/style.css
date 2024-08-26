@@ -15,6 +15,12 @@ img {
     max-width: 100%;
 }
 
+/* Typography */
+:root {
+    font-family: 'Arial';
+    font-size: 62.5%;
+}
+
 /* Components */
 .bg {
     display: grid;
@@ -24,7 +30,7 @@ img {
 
 .wrapper {
     box-shadow: inset 0 0 20px gold;
-    max-width: 300px;
+    width: 300px;
     inset: 0;
     margin: auto;
 }
@@ -34,9 +40,30 @@ img {
 }
 
 .article-cover {
-    box-shadow: inset 0 0 10px blue;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.article-cover img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .article-contents {
-    box-shadow: inset 0 0 10px purple;
+    background-color: #9C6035;
+    padding: 60px 20px 46px;
+}
+
+.article-contents-title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.article-contents-description {
+    box-shadow: inset 0 0 20px red;
 }
