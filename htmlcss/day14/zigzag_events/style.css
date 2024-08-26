@@ -45,6 +45,7 @@ img {
   --color-gray-90: #111111;
   --color-gray-100: #000000;
 
+  /* Color-rgb */
   --color-purple-100-rgb: 98 48 162;
   --color-gray-100-rgb: 0 0 0;
 }
@@ -141,6 +142,7 @@ img {
 .title-headings strong {
   font-weight: bold;
 }
+
 .type-purple .title-headings strong{
   box-shadow: inset 0 -0.6em 0 0 var(--color-red-100);
 }
@@ -182,17 +184,27 @@ img {
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 4.4rem;
-  background-image: url("images/photo01.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   z-index: 0;
 }
-.panal-cover.craft {
-  background-image: url("images/photo02.png");
+
+.panal-cover-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--color-purple-100-rgb) / .5)
 }
-.panal-cover.scrap {
-  background-image: url("images/photo03.png");
+
+.panal-cover-bg {
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .panal-cover::before {
