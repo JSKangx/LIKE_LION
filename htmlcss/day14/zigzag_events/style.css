@@ -101,12 +101,15 @@ img {
 }
 
 .section-header {
-  display: flex;
-  align-items: center;
   margin-bottom: 100px;
 }
 
-.section-title {
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title-headings {
   font-size: 4rem;
   line-height: 1.1;
   color: var(--color-white);
@@ -115,14 +118,14 @@ img {
   flex-shrink: 0;
 }
 
-.section-header strong {
+.title-headings strong {
   font-weight: bold;
   width: fit-content;
   position: relative;
   z-index: 2;
 }
 
-.section-title strong::after {
+.title-headings strong::after {
   content: "";
   width: 100%;
   height: 26px;
@@ -133,7 +136,9 @@ img {
   z-index: -1;
 }
 
-.header-description {
+.title-description {
+  flex-grow: 1;
+  max-width: 582px;
   font-size: 1.4rem;
   max-width: 582px;
   display: flex;
@@ -141,13 +146,17 @@ img {
   color: var(--colro-purple-50);
 }
 
-.header-description::before {
+.title-description::before {
   content: "";
   width: 90px;
   height: 1px;
   background-color: currentColor;
   margin: 0 32px 0 22px;
   flex-shrink: 0;
+}
+
+.title-controls {
+  margin-left: auto;
 }
 
 .card-rows {
@@ -229,12 +238,11 @@ img {
   flex-direction: row-reverse;
 }
 
-.type-beige .section-title {
+.type-beige .title-headings {
   color: var(--color-red-50);
-  flex-grow: 1;
 }
 
-.type-beige .section-title strong::after {
+.type-beige .title-headings strong::after {
   background-color: var(--color-white);
 }
 
