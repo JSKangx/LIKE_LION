@@ -218,7 +218,7 @@ img {
 .panal-contents {
   display: grid;
   flex-grow: 1;
-  flex-basis: 0;
+  flex-basis: 500px;
   min-width: 0;
   padding: 16px 21px 21px;
   background-color: var(--color-white);
@@ -360,11 +360,17 @@ img {
   .title-description::before {
     display: none;
   }
+}
+
+@media (max-width: 524px) {
   .l_grid.type-rows .panal {
     flex-direction: column;
   }
   .panal .panal-cover {
     width: auto;
     padding: 15px 0;
+  }
+  .panal .panal-contents {
+    flex-basis: 0;
   }
 }
