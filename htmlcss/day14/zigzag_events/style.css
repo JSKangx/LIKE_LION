@@ -77,10 +77,24 @@ img {
 
 /* Common components */
 .list {
-  display: grid;
-  row-gap: 12px;
+  padding-left: 24px;
+  font-size: 1.4rem;
 }
 
+.list li + li {
+  margin-top: 12px;
+}
+
+.list li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--colro-purple-50);
+  margin-right: 14px;
+  margin-left: -24px;
+}
 
 .button {
   font-size: 16px;
@@ -216,25 +230,6 @@ img {
   font-weight: bold;
   color: var(--color-purple-100);
   margin-bottom: 14px;
-}
-
-.list {
-  padding-left: 24px;
-}
-
-.list li {
-  font-size: 1.4rem;
-}
-
-.list li::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--colro-purple-50);
-  margin-right: 14px;
-  margin-left: -24px;
 }
 
 .panal:nth-child(even) {
